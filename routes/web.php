@@ -12,6 +12,8 @@ use App\Http\Controllers\ServicesDetailController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController;
 
+use App\Http\Controllers\Auth\AdminAuthController;
+use App\Http\Controllers\Admin\AdminController;
 
 
 
@@ -29,3 +31,25 @@ Route::get('/gallery',[GalleryController::class,'index']);
 
 Route::get('/contact',[ContactController::class,'index']);
 Route::post('/submit-contact-form',[ContactController::class,'submitContactForm']);
+
+
+
+
+Route::get('admin', [AdminAuthController::class, 'getLogin']);
+
+
+Route::group(['prefix' => 'admin'], function () {
+
+    Route::get('logout', [AdminAuthController::class, 'logout'])->name('adminLogout');
+
+    Route::group(['middleware' => ['adminauth']], function () {
+        Route::get('login', [AdminAuthController::class, 'getLogin'])->name('adminLogin');
+        Route::post('login', [AdminAuthController::class, 'postLogin'])->name('adminLoginPost');
+    });
+
+    Route::group(['middleware' => ['adminAfterLogin']], function () {
+        Route::get('dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+    });
+
+
+});
