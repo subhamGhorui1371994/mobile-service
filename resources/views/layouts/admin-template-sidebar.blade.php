@@ -9,7 +9,7 @@
 
                     <li class="navigation-header"><span>Main</span> <i class="icon-menu" title="Main pages"></i></li>
                     <li class="{{Request::segment(2) ==='dashboard' ? 'active' : ''}}"><a href="{!! URL::to('admin/dashboard') !!}"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
-
+                    <li class="{{Request::segment(2) ==='service' ? 'active' : ''}}"><a href="{!! URL::to('admin/service') !!}"><i class="icon-newspaper2"></i> <span>Service</span></a></li>
                 </ul>
             </div>
         </div>
