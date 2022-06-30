@@ -2,8 +2,7 @@
 
 namespace App\Models;
 
-use DB;
-use Eloquent;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
 
 class Service extends Model
