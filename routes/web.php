@@ -14,6 +14,7 @@ use App\Http\Controllers\ContactController;
 
 use App\Http\Controllers\Auth\AdminAuthController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\ServicesAdminController;
 
 
 
@@ -49,6 +50,11 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::group(['middleware' => ['adminAfterLogin']], function () {
         Route::get('dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
+
+        Route::model('service', 'App\Models\Service');
+        Route::resource('service', 'App\Http\Controllers\Admin\ServicesAdminController');
+        Route::post('service/get-list', [ServicesAdminController::class, 'service_list_ajax']);
+        Route::get('service/delete/{id}', [ServicesAdminController::class, 'destroy']);
     });
 
 
