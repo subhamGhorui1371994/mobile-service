@@ -7,7 +7,10 @@ use App\Models\Service;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Validator;
 
 class ServicesAdminController extends Controller
 {
@@ -102,5 +105,62 @@ class ServicesAdminController extends Controller
         return view('admin.service.edit', compact('breadcrumb_title', 'service'));
     }
 
+
+    /**
+     * @param Request $request
+     * @return Application|RedirectResponse|Redirector
+     */
+    public function store(Request $request)
+    {
+        $validate_value['title'] = $request->post('title');
+        $validate_rule['title'] = 'required';
+        $validate_value['small_description'] = $request->post('small_description');
+        $validate_rule['small_description'] = 'required';
+        $validate_value['description'] = $request->post('description');
+        $validate_rule['description'] = 'required';
+
+        $validator = Validator::make($validate_value, $validate_rule);
+
+        if ($validator->fails()) {
+            $validation_errors = $validator->errors()->all();
+            return redirect('admin/notice/create')->withErrors(implode(', ', $validation_errors));
+        } else {
+
+            $display_image_file = $request->file('display_image');
+            $banner_image_file = $request->file('banner_image');
+            $footer_image_file = $request->file('footer_image');
+
+            if ($display_image_file) {
+                $fileName = 'HCE-NOTICE-' . time() . '-'. unique_id() . '.' . $display_image_file->extension();
+                $display_image_file->move(public_path('uploads/notice/'), $fileName);
+                $display_image_file = 'uploads/services/' . $fileName;
+            }
+
+            if ($banner_image_file) {
+                $fileName = 'HCE-NOTICE-' . time() . '-'. unique_id() . '.' . $banner_image_file->extension();
+                $banner_image_file->move(public_path('uploads/notice/'), $fileName);
+                $banner_image_file = 'uploads/services/' . $fileName;
+            }
+
+            if ($footer_image_file) {
+                $fileName = 'HCE-NOTICE-' . time() . '-'. unique_id() . '.' . $footer_image_file->extension();
+                $footer_image_file->move(public_path('uploads/notice/'), $fileName);
+                $footer_image_file = 'uploads/services/' . $fileName;
+            }
+
+            $service = new Service();
+            $service->fill([
+                'date' => date('Y-m-d', strtotime($request->post('date'))),
+                'title' => $request->post('title'),
+                'description' => $request->post('description'),
+                'display_image' => $display_image_file ?? null,
+                'banner_image' => $banner_image_file ?? null,
+                'footer_image' => $footer_image_file ?? null,
+            ]);
+            $service->save();
+
+            return redirect('admin/service')->withSuccess('Service added successfully.');
+        }
+    }
 
 }
