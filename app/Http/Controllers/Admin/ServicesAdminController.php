@@ -123,7 +123,7 @@ class ServicesAdminController extends Controller
 
         if ($validator->fails()) {
             $validation_errors = $validator->errors()->all();
-            return redirect('admin/notice/create')->withErrors(implode(', ', $validation_errors));
+            return redirect('admin/service/create')->withErrors(implode(', ', $validation_errors));
         } else {
 
             $display_image_file = $request->file('display_image');
@@ -131,31 +131,31 @@ class ServicesAdminController extends Controller
             $footer_image_file = $request->file('footer_image');
 
             if ($display_image_file) {
-                $fileName = 'HCE-NOTICE-' . time() . '-'. unique_id() . '.' . $display_image_file->extension();
-                $display_image_file->move(public_path('uploads/notice/'), $fileName);
-                $display_image_file = 'uploads/services/' . $fileName;
+                $fileName = 'Services-' . time() . '-'. unique_id() . '.' . $display_image_file->extension();
+                $display_image_file->move(public_path('uploads/services/'), $fileName);
+                $display_image_file_path = 'uploads/services/' . $fileName;
             }
 
             if ($banner_image_file) {
-                $fileName = 'HCE-NOTICE-' . time() . '-'. unique_id() . '.' . $banner_image_file->extension();
-                $banner_image_file->move(public_path('uploads/notice/'), $fileName);
-                $banner_image_file = 'uploads/services/' . $fileName;
+                $fileName = 'Services-' . time() . '-'. unique_id() . '.' . $banner_image_file->extension();
+                $banner_image_file->move(public_path('uploads/services/'), $fileName);
+                $banner_image_file_path = 'uploads/services/' . $fileName;
             }
 
             if ($footer_image_file) {
-                $fileName = 'HCE-NOTICE-' . time() . '-'. unique_id() . '.' . $footer_image_file->extension();
-                $footer_image_file->move(public_path('uploads/notice/'), $fileName);
-                $footer_image_file = 'uploads/services/' . $fileName;
+                $fileName = 'Services-' . time() . '-'. unique_id() . '.' . $footer_image_file->extension();
+                $footer_image_file->move(public_path('uploads/services/'), $fileName);
+                $footer_image_file_path = 'uploads/services/' . $fileName;
             }
 
             $service = new Service();
             $service->fill([
-                'date' => date('Y-m-d', strtotime($request->post('date'))),
                 'title' => $request->post('title'),
                 'description' => $request->post('description'),
-                'display_image' => $display_image_file ?? null,
-                'banner_image' => $banner_image_file ?? null,
-                'footer_image' => $footer_image_file ?? null,
+                'small_description' => $request->post('small_description'),
+                'display_image' => $display_image_file_path ?? null,
+                'banner_image' => $banner_image_file_path ?? null,
+                'footer_image' => $footer_image_file_path ?? null,
             ]);
             $service->save();
 
