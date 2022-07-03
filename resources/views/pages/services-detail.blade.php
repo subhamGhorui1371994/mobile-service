@@ -20,28 +20,13 @@
             <div class="row clearfix">
                 <!--Content Side-->
                 <div class="content-side order-last col-xl-9 col-lg-8 col-md-12 col-sm-12">
-                    <div class={{ url('service-detail') }}>
+                    <div>
                         <!-- Image Box -->
-                        <div class="image-box wow fadeIn"><img src={{ url('assets/images/resource/service-detail.jpg') }}
+                        <div class="image-box wow fadeIn"><img src="{{ URL::asset(checkAndRenderImage($serviceDetails->banner_image, 'assets/images/resource/service-2.jpg')) }}"
                                 alt=""></div>
 
                         <div class="lower-content">
-                            <h2>Tablet Repair Diagnosis</h2>
-                            <p>Our trained technicians will test and accurately diagnose the Tablet Repair issue first,
-                                making sure to replace only the parts that are causing the problem. We won't make you pay
-                                for something you don't need! Then, once the repairs are made, we will test your device
-                                again to make sure it's working properly before you leave the store.</p>
-                            <h3>Performance Guarantee</h3>
-                            <p>Like in everything we do, you can expect the same superior service when we repair your
-                                smartphone, tablet or MP3 player. Backed by our extensive 6-month warranty on parts and
-                                workmanship, our skilled technicians will handle your broken device with precision and care;
-                                that's the Batteries Plus Bulbs way!</p>
-                            <h3>Top Quality Service</h3>
-                            <p>At Batteries Plus Bulbs, you can always expect quality products and outstanding service. As
-                                experts in constantly evolving mobile technologies, we have made it our business to offer
-                                Tablet Repair repair services for the top mobile device brands. Our teams are fully trained
-                                to install replacement batteries in these smartphones, tablets and MP3 players, along with
-                                repairing or replacing screens, buttons, ports and components.</p>
+                            {!!html_entity_decode($serviceDetails->description)!!}
                             <div class="two-column">
                                 <div class="row clearfix">
                                     <div class="info-column col-xl-6 col-lg-12 col-md-12 col-sm-12">

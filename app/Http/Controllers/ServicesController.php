@@ -3,15 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Service;
 
 class ServicesController extends Controller
 {
     public function __construct()
     {
-        
+
     }
 
     public function index(){
-        return view('pages.services');
+        $services = Service::all()->toArray();
+        return view('pages.services', compact('services'));
     }
 }

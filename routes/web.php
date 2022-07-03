@@ -26,7 +26,7 @@ Route::get('/faq',[FaqController::class,'index']);
 Route::get('/pricing',[PricingController::class,'index']);
 
 Route::get('/services',[ServicesController::class,'index']);
-Route::get('/service-detail',[ServicesDetailController::class,'index']);
+Route::get('/service-detail/{id}',[ServicesDetailController::class,'index']);
 
 Route::get('/gallery',[GalleryController::class,'index']);
 

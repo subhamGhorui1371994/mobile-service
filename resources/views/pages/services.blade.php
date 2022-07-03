@@ -19,106 +19,24 @@
         <div class="auto-container">
             <div class="row">
                 <!-- Service Block -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-1.jpg') }}
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
+                @if($services)
+                    @foreach($services as $key => $service)
+                        <div class="service-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img
+                                            src="{{ URL::asset(checkAndRenderImage($service['display_image'], 'assets/images/resource/service-2.jpg')) }}" alt=""></figure>
+                                    <div class="overlay-box"><a href={{ url('service-detail/'.$service['id']) }} class="read-more">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="lower-content">
+                                    <h4><a href={{ url('service-detail/'.$service['id']) }}>{{$service['title']}}</a></h4>
+                                    {!!html_entity_decode($service['small_description'])!!}
+                                </div>
                             </div>
                         </div>
-                        <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Smart Phone Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Block -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-2.jpg') }}
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}> MAC Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Block -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-3.jpg') }}
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Tablets & IPAD Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Block -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-4.jpg') }}
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Game Console Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Block -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-5.jpg') }}
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Desktop Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Block -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-6.jpg') }}
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Printers Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div>
+                    @endforeach
+                @endif
             </div>
         </div>
     </section>
