@@ -89,11 +89,11 @@
                                 <div class="widget-content">
                                     <ul class="contact-list">
                                         <li><span class="la la-map-marker"></span>
-                                            123 Main Street, St. NW Street, 1 Washington, DC,USA.</li>
+                                            {{env('OFFICE_ADDRESS', 'Gopalpur, Keshiary, Paschim Midnapur, West Bengal 721133')}}</li>
                                         <li><span class="la la-envelope"></span><a
-                                                href={{ url('#') }}>business@support.com</a></li>
+                                                href="mailto:{{env('OFFICE_EMAIL', 'doorservice.wb@gmail.com')}}?subject = Feedback Or Contact&body = Message">{{env('OFFICE_EMAIL', 'doorservice.wb@gmail.com')}}</a></li>
                                         <li><span class="la la-phone"></span>
-                                            +92 (0) 012 345 6789</li>
+                                            {{env('OFFICE_PHONE', '8759983102')}}</li>
                                     </ul>
 
                                     <div class="subscribe-form">

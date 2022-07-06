@@ -20,7 +20,7 @@
             <div class="row clearfix">
                 <!--Content Side-->
                 <div class="content-side order-last col-xl-9 col-lg-8 col-md-12 col-sm-12">
-                    <div>
+                    <div class="service-detail">
                         <!-- Image Box -->
                         <div class="image-box wow fadeIn"><img src="{{ URL::asset(checkAndRenderImage($serviceDetails->banner_image, 'assets/images/resource/service-2.jpg')) }}"
                                 alt=""></div>
