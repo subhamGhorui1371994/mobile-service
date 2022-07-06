@@ -19,7 +19,7 @@
                         <div class="icon-box"><span class="la la-home"></span></div>
                         <ul>
                             <li><span>Visit Us</span></li>
-                            <li>26 Zonal Street, USA</li>
+                            <li>{{env('OFFICE_SMALL_ADDRESS','OFFICE_SMALL_ADDRESS')}}</li>
                         </ul>
                     </div>
 
@@ -28,7 +28,7 @@
                         <div class="icon-box"><span class="la la-phone"></span></div>
                         <ul>
                             <li><span>Call Us</span></li>
-                            <li>+92 300 375 3584</li>
+                            <li>{{env('OFFICE_PHONE','8759983102')}}</li>
                         </ul>
                     </div>
 
@@ -36,14 +36,14 @@
                     <div class="upper-column info-box">
                         <div class="icon-box"><span class="la la-clock-o"></span></div>
                         <ul>
-                            <li><span>Mon - Sat</span></li>
-                            <li>09:00 to 18:00</li>
+                            <li><span>{{env('OFFICE_DAY','Mon - Sat')}}</span></li>
+                            <li>{{env('OFFICE_TIME','09:00 To 18:00"')}}</li>
                         </ul>
                     </div>
 
                     <!--Info Box-->
                     <div class="upper-column info-box btn-box">
-                        <a href={{url("contact")}} class="theme-btn btn-style-four">Get Free Quote</a>
+                        <a href="{{url("contact")}}" class="theme-btn btn-style-four">Get Free Quote</a>
                     </div>
 
                 </div>
