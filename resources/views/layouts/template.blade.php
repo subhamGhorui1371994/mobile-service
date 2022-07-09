@@ -25,6 +25,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <script type="text/javascript">
+        var base_url = '{!! url('/') !!}';
+        var site_logo = '{{ URL::asset('assets/img/logo-primary.png') }}';
+    </script>
 </head>
 
 <body>
@@ -72,6 +76,22 @@
     <script src={{ url('assets/js/appear.js') }}></script>
     <script src={{ url('assets/js/mixitup.js') }}></script>
     <script src={{ url('assets/js/script.js') }}></script>
+
+    <script src="//unpkg.com/notie" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function showNotification(type, message, timeout = 5) {
+            notie.alert({
+                type: type, // optional, default = 4, enum: [1, 2, 3, 4, 5, 'success', 'warning', 'error', 'info', 'neutral']
+                text: message,
+                time: timeout, // optional, default = 3, minimum = 1,
+                stay: false, // optional, default = false
+                position: 'bottom' // optional, default = 'top', enum: ['top', 'bottom']
+            })
+        }
+    </script>
+
+    @yield('footer_script')
 </body>
 
 </html>
