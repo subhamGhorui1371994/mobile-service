@@ -347,7 +347,7 @@
                             <figure class="image"><img src="{{ url('assets/images/gallery/2-1.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
-                                <div class={{ url('content') }}>
+                                <div class="content">
                                     <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
                                     <a href="{{ url('project-detail') }}" class="link"><span
@@ -365,7 +365,7 @@
                             <figure class="image"><img src="{{ url('assets/images/gallery/2-2.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
-                                <div class={{ url('content') }}>
+                                <div class="content">
                                     <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
                                     <a href="{{ url('project-detail') }}" class="link"><span
@@ -383,7 +383,7 @@
                             <figure class="image"><img src="{{ url('assets/images/gallery/2-3.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
-                                <div class={{ url('content') }}>
+                                <div class="content">
                                     <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
                                     <a href="{{ url('project-detail') }}" class="link"><span
@@ -401,7 +401,7 @@
                             <figure class="image"><img src="{{ url('assets/images/gallery/2-4.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
-                                <div class={{ url('content') }}>
+                                <div class="content">
                                     <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
                                     <a href="{{ url('project-detail') }}" class="link"><span
@@ -419,7 +419,7 @@
                             <figure class="image"><img src="{{ url('assets/images/gallery/2-5.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
-                                <div class={{ url('content') }}>
+                                <div class="content">
                                     <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
                                     <a href="{{ url('project-detail') }}" class="link"><span
@@ -437,7 +437,7 @@
                             <figure class="image"><img src="{{ url('assets/images/gallery/2-6.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
-                                <div class={{ url('content') }}>
+                                <div class="content">
                                     <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
                                     <a href="{{ url('project-detail') }}" class="link"><span
