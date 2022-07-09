@@ -11,12 +11,12 @@
                         data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1=""
                         data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                         data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off"
-                        data-slotamount="default" data-thumb={{ url('assets/images/main-slider/image-2.jpg') }}
+                        data-slotamount="default" data-thumb="{{ url('assets/images/main-slider/image-2.jpg') }}"
                         data-title="Slide Title" data-transition="parallaxvertical">
 
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                             data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                            src={{ url('assets/images/main-slider/image-2.jpg') }}>
+                            src="{{ url('assets/images/main-slider/image-2.jpg') }}">
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
@@ -47,8 +47,8 @@
                             data-y="['middle','middle','middle','middle']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
-                                <a href={{ url('Product') }} class="theme-btn btn-style-one"><span>Buy Now</span></a>
-                                <a href={{ url('content') }} class="theme-btn btn-style-two"><span>Contact us</span></a>
+                                <a href="{{ url('Product') }}" class="theme-btn btn-style-one"><span>Buy Now</span></a>
+                                <a href="{{ url('content') }}" class="theme-btn btn-style-two"><span>Contact us</span></a>
                             </div>
                         </div>
                     </li>
@@ -59,12 +59,12 @@
                         data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1=""
                         data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                         data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off"
-                        data-slotamount="default" data-thumb={{ url('assets/images/main-slider/image-2.jpg') }}
+                        data-slotamount="default" data-thumb="{{ url('assets/images/main-slider/image-2.jpg') }}"
                         data-title="Slide Title" data-transition="parallaxvertical">
 
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                             data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                            src={{ url('assets/images/main-slider/image-1.jpg') }}>
+                            src="{{ url('assets/images/main-slider/image-1.jpg') }}">
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
@@ -95,8 +95,8 @@
                             data-y="['middle','middle','middle','middle']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
-                                <a href={{ url('Product') }} class="theme-btn btn-style-one"><span>Buy Now</span></a>
-                                <a href={{ url('content') }} class="theme-btn btn-style-two"><span>Contact us</span></a>
+                                <a href="{{ url('Product') }}" class="theme-btn btn-style-one"><span>Buy Now</span></a>
+                                <a href="{{ url('content') }}" class="theme-btn btn-style-two"><span>Contact us</span></a>
                             </div>
                         </div>
                     </li>
@@ -125,8 +125,8 @@
                                 - RepairPlus</span></div>
 
                         <div class="link-box">
-                            <a href={{ url('about') }} class="theme-btn btn-style-two">Contact Us</a>
-                            <a href={{ url('#') }} class="theme-btn call-btn"><i class="icon la la-phone"></i> + 62
+                            <a href="{{ url('about') }}" class="theme-btn btn-style-two">Contact Us</a>
+                            <a href="{{ url('#') }}" class="theme-btn call-btn"><i class="icon la la-phone"></i> + 62
                                 867
                                 6872</a>
                         </div>
@@ -137,7 +137,7 @@
                 <div class="video-column col-lg-6 col-md-12 col-sm-12 wow fadeIn">
                     <div class="inner-column">
                         <div class="float-text">I am a Computer and Mobile Expart</div>
-                        <figure class="image"><img src={{ url('assets/images/resource/image-2.jpg') }} alt="">
+                        <figure class="image"><img src="{{ url('assets/images/resource/image-2.jpg') }}" alt="">
                         </figure>
                         <div class="link-box"><a href="https://www.youtube.com/watch?v=e_WOEL6F1YE" class="link"
                                 data-fancybox="gallery" data-caption=""><span class="icon la la-play"></span></a></div>
@@ -160,13 +160,13 @@
                 <div class="service-block-two">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-1.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/service-1.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
+                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read More</a>
                             </div>
                         </div>
                         <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Smart Phone Repair</a></h4>
+                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
                             <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
                                 Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
                         </div>
@@ -177,13 +177,13 @@
                 <div class="service-block-two">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-2.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/service-2.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
+                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read More</a>
                             </div>
                         </div>
                         <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Smart Phone Repair</a></h4>
+                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
                             <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
                                 Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
                         </div>
@@ -194,13 +194,13 @@
                 <div class="service-block-two">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-3.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/service-3.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
+                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read More</a>
                             </div>
                         </div>
                         <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Smart Phone Repair</a></h4>
+                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
                             <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
                                 Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
                         </div>
@@ -211,13 +211,13 @@
                 <div class="service-block-two">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-1.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/service-1.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
+                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read More</a>
                             </div>
                         </div>
                         <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Smart Phone Repair</a></h4>
+                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
                             <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
                                 Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
                         </div>
@@ -228,13 +228,13 @@
                 <div class="service-block-two">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-2.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/service-2.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
+                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read More</a>
                             </div>
                         </div>
                         <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Smart Phone Repair</a></h4>
+                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
                             <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
                                 Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
                         </div>
@@ -245,13 +245,13 @@
                 <div class="service-block-two">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-3.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/service-3.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
+                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read More</a>
                             </div>
                         </div>
                         <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Smart Phone Repair</a></h4>
+                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
                             <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
                                 Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
                         </div>
@@ -262,13 +262,13 @@
                 <div class="service-block-two">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/service-2.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/service-2.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('service-detail') }} class="read-more">Read More</a>
+                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read More</a>
                             </div>
                         </div>
                         <div class="lower-content">
-                            <h4><a href={{ url('service-detail') }}>Smart Phone Repair</a></h4>
+                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
                             <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
                                 Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
                         </div>
@@ -344,15 +344,15 @@
                     <!-- Project item -->
                     <div class="project-item all mix laptop mobile col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/gallery/2-1.jpg') }} alt="">
+                            <figure class="image"><img src="{{ url('assets/images/gallery/2-1.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
                                 <div class={{ url('content') }}>
-                                    <h3><a href={{ url('project-detail') }}>Laptop Service</a></h3>
+                                    <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
-                                    <a href={{ url('project-detail') }} class="link"><span
+                                    <a href="{{ url('project-detail') }}" class="link"><span
                                             class="icon la la-link"></span></a>
-                                    <a href={{ url('assets/images/gallery/2-1.jpg') }} class="link"
+                                    <a href="{{ url('assets/images/gallery/2-1.jpg') }}" class="link"
                                         data-fancybox="gallery" data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -362,15 +362,15 @@
                     <!-- Project item -->
                     <div class="project-item all mix computer mobile tablet col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/gallery/2-2.jpg') }} alt="">
+                            <figure class="image"><img src="{{ url('assets/images/gallery/2-2.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
                                 <div class={{ url('content') }}>
-                                    <h3><a href={{ url('project-detail') }}>Laptop Service</a></h3>
+                                    <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
-                                    <a href={{ url('project-detail') }} class="link"><span
+                                    <a href="{{ url('project-detail') }}" class="link"><span
                                             class="icon la la-link"></span></a>
-                                    <a href={{ url('assets/images/gallery/2-2.jpg') }} class="link"
+                                    <a href="{{ url('assets/images/gallery/2-2.jpg') }}" class="link"
                                         data-fancybox="gallery" data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -380,15 +380,15 @@
                     <!-- Project item -->
                     <div class="project-item all mix tablet mobile computer laptop col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/gallery/2-3.jpg') }} alt="">
+                            <figure class="image"><img src="{{ url('assets/images/gallery/2-3.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
                                 <div class={{ url('content') }}>
-                                    <h3><a href={{ url('project-detail') }}>Laptop Service</a></h3>
+                                    <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
-                                    <a href={{ url('project-detail') }} class="link"><span
+                                    <a href="{{ url('project-detail') }}" class="link"><span
                                             class="icon la la-link"></span></a>
-                                    <a href={{ url('assets/images/gallery/2-3.jpg') }} class="link"
+                                    <a href="{{ url('assets/images/gallery/2-3.jpg') }}" class="link"
                                         data-fancybox="gallery" data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -398,15 +398,15 @@
                     <!-- Project item -->
                     <div class="project-item all mix computer tablet col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/gallery/2-4.jpg') }} alt="">
+                            <figure class="image"><img src="{{ url('assets/images/gallery/2-4.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
                                 <div class={{ url('content') }}>
-                                    <h3><a href={{ url('project-detail') }}>Laptop Service</a></h3>
+                                    <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
-                                    <a href={{ url('project-detail') }} class="link"><span
+                                    <a href="{{ url('project-detail') }}" class="link"><span
                                             class="icon la la-link"></span></a>
-                                    <a href={{ url('assets/images/gallery/2-4.jpg') }} class="link"
+                                    <a href="{{ url('assets/images/gallery/2-4.jpg') }}" class="link"
                                         data-fancybox="gallery" data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -416,15 +416,15 @@
                     <!-- Project item -->
                     <div class="project-item all mix tablet mobile laptop col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/gallery/2-5.jpg') }} alt="">
+                            <figure class="image"><img src="{{ url('assets/images/gallery/2-5.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
                                 <div class={{ url('content') }}>
-                                    <h3><a href={{ url('project-detail') }}>Laptop Service</a></h3>
+                                    <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
-                                    <a href={{ url('project-detail') }} class="link"><span
+                                    <a href="{{ url('project-detail') }}" class="link"><span
                                             class="icon la la-link"></span></a>
-                                    <a href={{ url('assets/images/gallery/2-5.jpg') }} class="link"
+                                    <a href="{{ url('assets/images/gallery/2-5.jpg') }}" class="link"
                                         data-fancybox="gallery" data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -434,15 +434,15 @@
                     <!-- Project item -->
                     <div class="project-item all mix computer tablet col-lg-4 col-md-6 col-sm-12">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/gallery/2-6.jpg') }} alt="">
+                            <figure class="image"><img src="{{ url('assets/images/gallery/2-6.jpg') }}" alt="">
                             </figure>
                             <div class="overlay-box">
                                 <div class={{ url('content') }}>
-                                    <h3><a href={{ url('project-detail') }}>Laptop Service</a></h3>
+                                    <h3><a href="{{ url('project-detail') }}">Laptop Service</a></h3>
                                     <div class="category">Catagory : Tablet Repair</div>
-                                    <a href={{ url('project-detail') }} class="link"><span
+                                    <a href="{{ url('project-detail') }}" class="link"><span
                                             class="icon la la-link"></span></a>
-                                    <a href={{ url('assets/images/gallery/2-6.jpg') }} class="link"
+                                    <a href="{{ url('assets/images/gallery/2-6.jpg') }}" class="link"
                                         data-fancybox="gallery" data-caption=""><span class="icon la la-plus"></span></a>
                                 </div>
                             </div>
@@ -453,7 +453,7 @@
 
             <!-- Button Box -->
             <div class="btn-box">
-                <a href={{ url('services') }} class="theme-btn btn-style-one">View All</a>
+                <a href="{{ url('services') }}" class="theme-btn btn-style-one">View All</a>
             </div>
         </div>
     </section>
@@ -541,21 +541,21 @@
                 <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/team-1.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/team-1.jpg') }}"
                                     alt=""></figure>
                             <div class="overlay-box">
-                                <a href={{ url('team') }} class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
-                                    <li><a href={{ url('#') }}><i class="la la-facebook"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-twitter"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-google-plus"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-dribbble"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-pinterest"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-google-plus"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-dribbble"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-pinterest"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href={{ url('team') }}>Roban Kosata</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Roban Kosata</a></h4>
                             <span class="designation">Computer Hardwere Enginer</span>
                         </div>
                     </div>
@@ -565,21 +565,21 @@
                 <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/team-2.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/team-2.jpg') }}"
                                     alt=""></figure>
                             <div class="overlay-box">
-                                <a href={{ url('team') }} class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
-                                    <li><a href={{ url('#') }}><i class="la la-facebook"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-twitter"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-google-plus"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-dribbble"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-pinterest"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-google-plus"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-dribbble"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-pinterest"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href={{ url('team') }}>Moneib Rabora</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Moneib Rabora</a></h4>
                             <span class="designation">Mobile Phone Hardwere Enginer</span>
                         </div>
                     </div>
@@ -589,21 +589,21 @@
                 <div class="team-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/team-3.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/team-3.jpg') }}"
                                     alt=""></figure>
                             <div class="overlay-box">
-                                <a href={{ url('team') }} class="icon"><span class="la la-phone"></span></a>
+                                <a href="{{ url('team') }}" class="icon"><span class="la la-phone"></span></a>
                                 <ul class="social-links">
-                                    <li><a href={{ url('#') }}><i class="la la-facebook"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-twitter"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-google-plus"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-dribbble"></i></a></li>
-                                    <li><a href={{ url('#') }}><i class="la la-pinterest"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-google-plus"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-dribbble"></i></a></li>
+                                    <li><a href="{{ url('#') }}"><i class="la la-pinterest"></i></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href={{ url('team') }}>Kartian Monaja</a></h4>
+                            <h4 class="name"><a href="{{ url('team') }}">Kartian Monaja</a></h4>
                             <span class="designation">Computer Hardwere Enginer</span>
                         </div>
                     </div>
@@ -618,26 +618,26 @@
         <div class="auto-container">
             <div class="sec-title clearfix">
                 <h2>Latest News</h2>
-                <div class="read-more"><a href={{ url('blog') }}>View All</a></div>
+                <div class="read-more"><a href="{{ url('blog') }}">View All</a></div>
             </div>
             <div class="row">
                 <!-- News Block -->
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/news-1.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/news-1.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('blog-detail') }} class="icon"><i
+                            <div class="overlay-box"><a href="{{ url('blog-detail') }}" class="icon"><i
                                         class="la la-link"></i></a></div>
                         </div>
 
                         <div class="lower-content">
                             <ul class="info">
-                                <li><a href={{ url('blog-detail') }}><i class="la la-user"></i> Admin</a></li>
-                                <li><a href={{ url('blog-detail') }}><i class="la la-calendar"></i> February 17, 2017</a>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-user"></i> Admin</a></li>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-calendar"></i> February 17, 2017</a>
                                 </li>
                             </ul>
-                            <h4><a href={{ url('blog-detail') }}>iPad Repairs For Schools / Universities Across The Usa</a>
+                            <h4><a href="{{ url('blog-detail') }}">iPad Repairs For Schools / Universities Across The Usa</a>
                             </h4>
                         </div>
                     </div>
@@ -647,19 +647,19 @@
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/news-2.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/news-2.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('blog-detail') }} class="icon"><i
+                            <div class="overlay-box"><a href="{{ url('blog-detail') }}" class="icon"><i
                                         class="la la-link"></i></a></div>
                         </div>
 
                         <div class="lower-content">
                             <ul class="info">
-                                <li><a href={{ url('blog-detail') }}><i class="la la-user"></i> Admin</a></li>
-                                <li><a href={{ url('blog-detail') }}><i class="la la-calendar"></i> February 17, 2017</a>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-user"></i> Admin</a></li>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-calendar"></i> February 17, 2017</a>
                                 </li>
                             </ul>
-                            <h4><a href={{ url('blog-detail') }}>We offer the best in same day iPhone Repairs plymouth</a>
+                            <h4><a href="{{ url('blog-detail') }}">We offer the best in same day iPhone Repairs plymouth</a>
                             </h4>
                         </div>
                     </div>
@@ -669,19 +669,19 @@
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><img src={{ url('assets/images/resource/news-3.jpg') }}
+                            <figure class="image"><img src="{{ url('assets/images/resource/news-3.jpg') }}"
                                     alt=""></figure>
-                            <div class="overlay-box"><a href={{ url('blog-detail') }} class="icon"><i
+                            <div class="overlay-box"><a href="{{ url('blog-detail') }}" class="icon"><i
                                         class="la la-link"></i></a></div>
                         </div>
 
                         <div class="lower-content">
                             <ul class="info">
-                                <li><a href={{ url('blog-detail') }}><i class="la la-user"></i> Admin</a></li>
-                                <li><a href={{ url('blog-detail') }}><i class="la la-calendar"></i> February 17, 2017</a>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-user"></i> Admin</a></li>
+                                <li><a href="{{ url('blog-detail') }}"><i class="la la-calendar"></i> February 17, 2017</a>
                                 </li>
                             </ul>
-                            <h4><a href={{ url('blog-detail') }}>All Software Boxes and Dongles At Best Prices</a></h4>
+                            <h4><a href="{{ url('blog-detail') }}">All Software Boxes and Dongles At Best Prices</a></h4>
                         </div>
                     </div>
                 </div>
@@ -696,53 +696,53 @@
             <!--Sponsors Carousel-->
             <ul class="sponsors-carousel owl-carousel owl-theme">
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/1.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/1.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/2.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/2.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/3.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/3.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/4.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/4.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/5.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/5.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/1.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/1.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/2.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/2.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/3.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/3.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/4.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/4.png') }}" alt=""></a>
                     </figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/5.png') }} alt=""></a>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/5.png') }}" alt=""></a>
                     </figure>
                 </li>
             </ul>
