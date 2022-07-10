@@ -484,30 +484,44 @@
                                 </div>
                                 <form method="post" action="index">
                                     <div class="row">
-                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="username" placeholder="Your Name"
-                                                required="">
-                                        </div>
-
-                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="phone" placeholder="Telephone" required="">
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                            <input type="text" name="full_name" placeholder="Your Name*" data-msg-required="Name field is required"
+                                                required>
+                                            <span class="validation-errors"></span>
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="email" name="email" placeholder="E-mail Address"
-                                                required="">
+                                            <input type="text" name="contact_number" placeholder="Mobile Or Telephone*"
+                                                   data-msg-required="Mobile Or Telephone field is required" required>
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="text" name="subject" placeholder="Subject">
+                                            <input type="email" name="email" placeholder="E-mail Address">
+                                        </div>
+
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                            <select name="service" id="services">
+                                                <option value="">Select Service</option>
+                                                @if($services)
+                                                    @foreach($services as $k => $service)
+                                                        <option value="{{$k}}">{{$service}}</option>
+                                                   @endforeach
+                                                @endif
+                                            </select>
                                         </div>
 
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="date" placeholder="Date">
+                                            <input type="date" name="date" placeholder="Date" data-msg-required="Date field is required"
+                                                   required>
                                         </div>
 
                                         <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="text" name="time" placeholder="Time">
+                                            <select name="tile_slot" id="tile_slot">
+                                                <option value="">Select Time Slot</option>
+                                                @foreach($time_slots as $time_slot)
+                                                    <option value="{{$time_slot}}">{{$time_slot}}</option>
+                                                @endforeach
+                                            </select>
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">

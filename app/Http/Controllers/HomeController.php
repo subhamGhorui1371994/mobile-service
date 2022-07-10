@@ -15,6 +15,12 @@ class HomeController extends Controller
 
     public function index(){
         $services = DB::table('services')->pluck('title','id');
-        return view('pages.home', compact('services'));
+        $time_slots = [
+            '10:00 AM - 12:00 PM',
+            '12:00 PM - 02:00 PM',
+            '02:00 PM - 06:00 PM',
+            '06:00 PM - 08:00 PM'
+        ];
+        return view('pages.home', compact('services', 'time_slots'));
     }
 }
