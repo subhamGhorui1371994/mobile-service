@@ -126,7 +126,7 @@
 
                         <div class="link-box">
                             <a href="{{ url('about') }}" class="theme-btn btn-style-two">Contact Us</a>
-                            <a href="https://api.whatsapp.com/send?phone=918759983102&text=Hello Doore Service, I want a service.">Whatsapp Chat</a>
+                            <a class="theme-btn btn-style-two" href="https://api.whatsapp.com/send?phone=918759983102&text=Hello Doore Service, I want a service."><i class="fa fa-whatsapp" style="font-size: 26px; color:green"></i></a>
                         </div>
                     </div>
                 </div>
