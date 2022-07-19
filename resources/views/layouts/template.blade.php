@@ -20,6 +20,7 @@
 
     <link rel="shortcut icon" href={{ url('assets/images/favicon.png') }} type="image/x-icon">
     <link rel="icon" href={{ url('assets/images/favicon.png') }} type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -29,6 +30,26 @@
         var base_url = '{!! url('/') !!}';
         var site_logo = '{{ URL::asset('assets/img/logo-primary.png') }}';
     </script>
+    <style>
+        .wp-float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index:100;
+        }
+
+        .wp-my-float{
+            margin-top:16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,7 +66,9 @@
         @include('layouts.template-footer')
 
 
-
+        <a href="https://api.whatsapp.com/send?phone=8759983102&text=Hello Doore Service, I want a service." class="wp-float" target="_blank">
+            <i class="fa fa-whatsapp wp-my-float"></i>
+        </a>
     </div>
     <!--End pagewrapper-->
 

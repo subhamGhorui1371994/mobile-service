@@ -126,9 +126,7 @@
 
                         <div class="link-box">
                             <a href="{{ url('about') }}" class="theme-btn btn-style-two">Contact Us</a>
-                            <a href="{{ url('#') }}" class="theme-btn call-btn"><i class="icon la la-phone"></i> + 62
-                                867
-                                6872</a>
+                            <a href="https://api.whatsapp.com/send?phone=8759983102&text=Hello Doore Service, I want a service.">Whatsapp Chat</a>
                         </div>
                     </div>
                 </div>
@@ -510,18 +508,22 @@
                                             </select>
                                         </div>
 
-                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                            <input type="date" name="date" placeholder="Date" data-msg-required="Date field is required"
+                                        <div class="form-group col-lg- col-md-12 col-sm-12">
+                                            Date: <input type="date" name="date" placeholder="Date" data-msg-required="Date field is required"
                                                    required>
                                         </div>
 
-                                        <div class="form-group col-lg-6 col-md-12 col-sm-12">
+                                        <div class="form-group col-lg- col-md-12 col-sm-12">
                                             <select name="tile_slot" id="tile_slot">
                                                 <option value="">Select Time Slot</option>
                                                 @foreach($time_slots as $time_slot)
                                                     <option value="{{$time_slot}}">{{$time_slot}}</option>
                                                 @endforeach
                                             </select>
+                                        </div>
+
+                                        <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                            <input type="text" name="location" placeholder="Location*" data-msg-required="Mobile Or Telephone field is required" required>
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
