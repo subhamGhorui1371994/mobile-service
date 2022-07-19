@@ -66,7 +66,7 @@
         @include('layouts.template-footer')
 
 
-        <a href="https://api.whatsapp.com/send?phone=8759983102&text=Hello Doore Service, I want a service." class="wp-float" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=918759983102&text=Hello Doore Service, I want a service." class="wp-float" target="_blank">
             <i class="fa fa-whatsapp wp-my-float"></i>
         </a>
     </div>
