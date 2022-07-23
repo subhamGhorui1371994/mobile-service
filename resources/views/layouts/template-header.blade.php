@@ -7,7 +7,7 @@
             <div class="clearfix">
 
                 <div class="logo-outer">
-                    <div class="logo"><a href={{url("/")}}><img src={{url("assets/images/logo-2.png")}} alt=""
+                    <div class="logo"><a href={{url("/")}}><img src={{url("assets/images/my-images/logo-2.jpg")}} alt="" style="width: 195px; height: 50px"
                                 title=""></a>
                     </div>
                 </div>
@@ -82,14 +82,14 @@
                                         </li>
                                     </ul> --}}
                                 </li>
-                                <li class="dropdown"><a href={{url("/")}}>About Us</a>
-                                    <ul>
-                                        <li><a href={{url("about-us")}}>About Us</a></li>
-                                        <li><a href={{url("team")}}>Team</a></li>
-                                        <li><a href={{url("faq")}}>FAQ's</a></li>
-                                        <li><a href={{url("pricing")}}>Price List</a></li>
-                                    </ul>
-                                </li>
+{{--                                <li class="dropdown"><a href={{url("/")}}>About Us</a>--}}
+{{--                                    <ul>--}}
+{{--                                        <li><a href={{url("about-us")}}>About Us</a></li>--}}
+{{--                                        <li><a href={{url("team")}}>Team</a></li>--}}
+{{--                                        <li><a href={{url("faq")}}>FAQ's</a></li>--}}
+{{--                                        <li><a href={{url("pricing")}}>Price List</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
                                 <li class="dropdown"><a href={{url("#")}}>Services</a>
                                     <ul>
                                         <li><a href={{url("services")}}>Services</a></li>
@@ -100,7 +100,7 @@
                                         <li><a href={{url("service-detail")}}>Services Detail</a></li>
                                     </ul>
                                 </li>
-                                <li><a href={{url("gallery")}}>Gallery</a></li>
+{{--                                <li><a href={{url("gallery")}}>Gallery</a></li>--}}
 
                                 {{-- <li class="dropdown"><a href="#">Blog</a>
                                     <ul>
@@ -125,36 +125,36 @@
 
                     <!-- Outer Box -->
                     <div class="outer-box">
-                        <ul class="social-icon-three clearfix">
-                            <li><a href={{url("#")}}><i class="la la-facebook-official"></i></a></li>
-                            <li><a href={{url("#")}}><i class="la la-twitter"></i></a></li>
-                            <li><a href={{url("#")}}><i class="la la-google-plus"></i></a></li>
-                            <li><a href={{url("#")}}><i class="la la-dribbble"></i></a></li>
-                            <li><a href={{url("#")}}><i class="la la-pinterest"></i></a></li>
-                        </ul>
+{{--                        <ul class="social-icon-three clearfix">--}}
+{{--                            <li><a href={{url("#")}}><i class="la la-facebook-official"></i></a></li>--}}
+{{--                            <li><a href={{url("#")}}><i class="la la-twitter"></i></a></li>--}}
+{{--                            <li><a href={{url("#")}}><i class="la la-google-plus"></i></a></li>--}}
+{{--                            <li><a href={{url("#")}}><i class="la la-dribbble"></i></a></li>--}}
+{{--                            <li><a href={{url("#")}}><i class="la la-pinterest"></i></a></li>--}}
+{{--                        </ul>--}}
 
                         <!--Search Box-->
-                        <div class="search-box-outer">
-                            <div class="dropdown">
-                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
-                                        class="la la-search"></span></button>
-                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
-                                    <li class="panel-outer">
-                                        <div class="form-container">
-                                            <form method="post" action="blog">
-                                                <div class="form-group">
-                                                    <input type="search" name="field-name" value=""
-                                                        placeholder="Search Here" required>
-                                                    <button type="submit" class="search-btn"><span
-                                                            class="la la-search"></span></button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+{{--                        <div class="search-box-outer">--}}
+{{--                            <div class="dropdown">--}}
+{{--                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3"--}}
+{{--                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span--}}
+{{--                                        class="la la-search"></span></button>--}}
+{{--                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">--}}
+{{--                                    <li class="panel-outer">--}}
+{{--                                        <div class="form-container">--}}
+{{--                                            <form method="post" action="blog">--}}
+{{--                                                <div class="form-group">--}}
+{{--                                                    <input type="search" name="field-name" value=""--}}
+{{--                                                        placeholder="Search Here" required>--}}
+{{--                                                    <button type="submit" class="search-btn"><span--}}
+{{--                                                            class="la la-search"></span></button>--}}
+{{--                                                </div>--}}
+{{--                                            </form>--}}
+{{--                                        </div>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>
