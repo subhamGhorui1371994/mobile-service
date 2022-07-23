@@ -16,7 +16,7 @@
 
                         <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10"
                             data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
-                            src="{{ url('assets/images/main-slider/image-2.jpg') }}">
+                            src="{{ url('assets/images/my-images/2.jpg') }}">
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
@@ -47,7 +47,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
-                                <a href="{{ url('Product') }}" class="theme-btn btn-style-one"><span>Buy Now</span></a>
+{{--                                <a href="{{ url('Product') }}" class="theme-btn btn-style-one"><span>Buy Now</span></a>--}}
                                 <a href="{{ url('content') }}" class="theme-btn btn-style-two"><span>Contact us</span></a>
                             </div>
                         </div>
