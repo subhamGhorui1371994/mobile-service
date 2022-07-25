@@ -21,6 +21,8 @@ class HomeController extends Controller
             '02:00 PM - 06:00 PM',
             '06:00 PM - 08:00 PM'
         ];
-        return view('pages.home', compact('services', 'time_slots'));
+        $dbServices = Service::all()->toArray();
+        // return view('pages.services', compact('services'));
+        return view('pages.home', compact('services', 'time_slots','dbServices'));
     }
 }

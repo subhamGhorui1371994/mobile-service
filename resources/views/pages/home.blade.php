@@ -146,139 +146,39 @@
     {{-- </section> --}}
     <!-- End About Us -->
 
+
+
     <!-- Services Section -->
     <section class="services-section-two">
         <div class="auto-container">
+
             <div class="sec-title text-center">
                 <h2>We Offer Service</h2>
             </div>
 
             <div class="services-carousel owl-carousel owl-theme">
-                <!-- Service Block -->
-                <div class="service-block-two">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ url('assets/images/resource/service-1.jpg') }}"
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read
-                                    More</a>
+                @if ($dbServices)
+                    @foreach ($dbServices as $key => $service)
+                        <!-- Service Block -->
+                        <div class="service-block-two">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                    <figure class="image"><img
+                                            src="{{ URL::asset(checkAndRenderImage($service['display_image'], 'assets/images/resource/service-2.jpg')) }}"
+                                            alt="">
+                                    </figure>
+                                    <div class="overlay-box"><a href="{{ url('service-detail/' . $service['id']) }}"
+                                            class="read-more">Read More...</a></div>
+                                </div>
+                                <div class="lower-content">
+                                    <h4><a href={{ url('service-detail/' . $service['id']) }}>{{ $service['title'] }}</a>
+                                    </h4>
+                                    <div class="text">{!! html_entity_decode($service['small_description']) !!}</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="lower-content">
-                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Service Block -->
-                {{-- <div class="service-block-two">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ url('assets/images/resource/service-2.jpg') }}"
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                <!-- Service Block -->
-                {{-- <div class="service-block-two">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ url('assets/images/resource/service-3.jpg') }}"
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                <!-- Service Block -->
-                {{-- <div class="service-block-two">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ url('assets/images/resource/service-1.jpg') }}"
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                <!-- Service Block -->
-                {{-- <div class="service-block-two">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ url('assets/images/resource/service-2.jpg') }}"
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                <!-- Service Block -->
-                {{-- <div class="service-block-two">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ url('assets/images/resource/service-3.jpg') }}"
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div> --}}
-
-                <!-- Service Block -->
-                {{-- <div class="service-block-two">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{ url('assets/images/resource/service-2.jpg') }}"
-                                    alt=""></figure>
-                            <div class="overlay-box"><a href="{{ url('service-detail') }}" class="read-more">Read
-                                    More</a>
-                            </div>
-                        </div>
-                        <div class="lower-content">
-                            <h4><a href="{{ url('service-detail') }}">Smart Phone Repair</a></h4>
-                            <div class="text">We specialise in Phone repairs for Apple iPhones, iPad, iPod, Samsung,
-                                Galaxy, Sony, HTC, Nexus, Motorola, Blackberry & ...</div>
-                        </div>
-                    </div>
-                </div> --}}
+                    @endforeach
+                @endif
             </div>
         </div>
     </section>
