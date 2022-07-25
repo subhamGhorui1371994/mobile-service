@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Adjust For - Mobiles & Computers Repair HTML Template | Home Page 02</title>
+    <title>@yield('title')</title>
     <!-- Stylesheets -->
     <link href={{ url('assets/css/bootstrap.css') }} rel="stylesheet">
     <link href={{ url('assets/plugins/revolution/css/settings.css') }} rel="stylesheet" type="text/css">

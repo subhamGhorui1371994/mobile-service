@@ -1,4 +1,5 @@
 @extends('layouts.template')
+@section('title','Home')
 @section('content')
     <!--Main Slider-->
     <section class="main-slider">

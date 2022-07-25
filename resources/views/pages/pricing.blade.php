@@ -1,4 +1,5 @@
 @extends('layouts.template')
+@section('title','Pricing')
 @section('content')
     <!--Page Title-->
     <section class="page-title" style="background-image:url(assets/images/background/6.jpg);">
