@@ -31,23 +31,23 @@
         var site_logo = '{{ URL::asset('assets/img/logo-primary.png') }}';
     </script>
     <style>
-        .wp-float{
-            position:fixed;
-            width:60px;
-            height:60px;
-            bottom:40px;
-            right:40px;
-            background-color:#25d366;
-            color:#FFF;
-            border-radius:50px;
-            text-align:center;
-            font-size:30px;
+        .wp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
             box-shadow: 2px 2px 3px #999;
-            z-index:100;
+            z-index: 100;
         }
 
-        .wp-my-float{
-            margin-top:16px;
+        .wp-my-float {
+            margin-top: 16px;
         }
     </style>
 </head>
@@ -63,10 +63,76 @@
 
         @yield('content')
 
+        @section('clients-section')
+
+            <!--Clients Section-->
+            <section class="clients-section style-two">
+                <div class="sponsors-outer">
+                    <!--Sponsors Carousel-->
+                    <ul class="sponsors-carousel owl-carousel owl-theme">
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/1.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/2.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/3.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/4.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/5.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/6.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/7.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/8.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/9.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                        <li class="slide-item">
+                            <figure class="image-box"><a href="{{ url('#') }}"><img
+                                        src="{{ url('assets/images/my-images/brand-logos/5.png') }}" alt=""></a>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--End Clients Section-->
+
+        @show
+
         @include('layouts.template-footer')
 
 
-        <a href="https://api.whatsapp.com/send?phone=918759983102&text=Hello Doore Service, I want a service." class="wp-float" target="_blank">
+
+        <a href="https://api.whatsapp.com/send?phone=918759983102&text=Hello Doore Service, I want a service."
+            class="wp-float" target="_blank">
             <i class="fa fa-whatsapp wp-my-float"></i>
         </a>
     </div>
