@@ -14,7 +14,7 @@
     <!-- REVOLUTION NAVIGATION STYLES -->
     <link href={{ url('assets/css/style.css') }} rel="stylesheet">
     <link href={{ url('assets/css/responsive.css') }} rel="stylesheet">
-
+    <meta name="_token" content="{{csrf_token()}}"/>
     <!--Color Themes-->
     <link id="theme-color-file" href={{ url('assets/css/color-themes/default-theme.css') }} rel="stylesheet">
 
@@ -26,6 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/notie/dist/notie.min.css">
     <script type="text/javascript">
         var base_url = '{!! url('/') !!}';
         var site_logo = '{{ URL::asset('assets/img/logo-primary.png') }}';

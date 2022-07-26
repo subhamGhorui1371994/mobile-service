@@ -32,6 +32,7 @@ Route::get('/gallery',[GalleryController::class,'index']);
 
 Route::get('/contact',[ContactController::class,'index']);
 Route::post('/submit-contact-form',[ContactController::class,'submitContactForm']);
+Route::post('/submit-appointment',[ContactController::class,'submitAppointmentForm']);
 
 
 

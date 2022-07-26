@@ -1,5 +1,4 @@
 @extends('layouts.template')
-@section('title','Home')
 @section('content')
     <!--Main Slider-->
     <section class="main-slider">
@@ -394,48 +393,49 @@
                     </div>
 
                     <!-- Form Column -->
-                    <div class="form-column col-lg-5 col-md-12 col-sm-12">
+                    <div class="form-column col-lg-5 col-md-12 col-sm-12 make-appointment-area">
                         <div class="inner-column">
                             <div class="appointment-form">
                                 <div class="title-box">
                                     <h3>Make An Appointment</h3>
                                 </div>
-                                <form method="post" action="index">
+                                <form id="appointment_form">
                                     <div class="row">
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="text" name="full_name" placeholder="Your Name*"
+                                            <input type="text" name="full_name" placeholder="Your Name*" id="full_name"
                                                 data-msg-required="Name field is required" required>
                                             <span class="validation-errors"></span>
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                             <input type="text" name="contact_number"
-                                                placeholder="Mobile Or Telephone*"
+                                                placeholder="Mobile Or Telephone*" id="contact_number"
                                                 data-msg-required="Mobile Or Telephone field is required" required>
+                                            <span class="validation-errors"></span>
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="email" name="email" placeholder="E-mail Address">
+                                            <input type="email" name="email" id="email" placeholder="E-mail Address">
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <select name="service" id="services">
+                                            <select name="service" id="service" data-msg-required="Please select a service." required>
                                                 <option value="">Select Service</option>
                                                 @if ($services)
                                                     @foreach ($services as $k => $service)
-                                                        <option value="{{ $k }}">{{ $service }}</option>
+                                                        <option value="{{ $service }}">{{ $service }}</option>
                                                     @endforeach
                                                 @endif
                                             </select>
+                                            <span class="validation-errors"></span>
                                         </div>
 
                                         <div class="form-group col-lg- col-md-12 col-sm-12">
-                                            Date: <input type="date" name="date" placeholder="Date"
-                                                data-msg-required="Date field is required" required>
+                                            Date: <input type="date" id="date" name="date" placeholder="Date">
                                         </div>
 
                                         <div class="form-group col-lg- col-md-12 col-sm-12">
-                                            <select name="tile_slot" id="tile_slot">
+                                            <select name="time_slot" id="time_slot">
                                                 <option value="">Select Time Slot</option>
                                                 @foreach ($time_slots as $time_slot)
                                                     <option value="{{ $time_slot }}">{{ $time_slot }}</option>
@@ -444,12 +444,13 @@
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="text" name="location" placeholder="Location*"
-                                                data-msg-required="Mobile Or Telephone field is required" required>
+                                            <input type="text" name="location" placeholder="Location*" id="location"
+                                                data-msg-required="Please enter your location" required>
+                                            <span class="validation-errors"></span>
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <textarea name="message" placeholder="Problem in Detail"></textarea>
+                                            <textarea name="problem" placeholder="Problem in Detail" id="problem"></textarea>
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
@@ -627,4 +628,76 @@
     {{-- </div> --}}
     {{-- </section> --}}
     <!--End News Section -->
+@endsection
+
+@section('footer_script')
+
+    <link href="{{ URL::asset('assets/admin/js/jquery-validation/jquery-validate.css') }}" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/jquery-validation/jquery.validate.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/jquery-validation/additional-methods.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('assets/js/jquery.blockUI.js') }}"></script>
+
+    <link href="{{ URL::asset('assets/admin/js/select2/dist/css/select2.min.css') }}" rel="stylesheet"/>
+    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/select2/dist/js/select2.min.js') }}"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#appointment_form').validate({
+                ignore: [],
+                errorPlacement: function errorPlacement(error, element) {
+                    $(element).parents('div.form-group').find('span.validation-errors').append(error);
+                },
+                onfocusout: false,
+                highlight: function (element, errorClass) {
+                    if ($(element).hasClass('select-2')) {
+                        $(element).next('.select2-container').addClass(errorClass);
+                    } else {
+                        $(element).addClass(errorClass);
+                    }
+                },
+                unhighlight: function (element, errorClass) {
+                    if ($(element).hasClass('select-2')) {
+                        $(element).next('.select2-container').removeClass(errorClass);
+                    } else {
+                        $(element).removeClass(errorClass);
+                    }
+                },
+                submitHandler: function (form) {
+                    if ($(form).valid()) {
+                        $('.make-appointment-area').block({
+                            message: '<h1 style="font-size: 26px;">Processing your request. Please wait...</h1><img src="'+base_url +'/assets/img/loader.gif" style="width: 100px;margin-bottom: 20px">',
+                            css: {border: '3px solid #a00', 'top': '30%!important'}
+                        });
+                        $.ajax({
+                            url: base_url + '/submit-appointment',
+                            type: 'POST',
+                            data: {
+                                'full_name': $('#full_name').val(),
+                                'contact_number': $('#contact_number').val(),
+                                'email': $('#email').val(),
+                                'service': $('#service').val(),
+                                'date': $('#date').val(),
+                                'time_slot': $('#time_slot').val(),
+                                'location': $('#location').val(),
+                                'problem': $('#problem').val(),
+                            },
+                            headers: {'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')},
+                            dataType: 'json',
+                        }).done(function (response) {
+                            if (response.status === true) {
+                                $('#appointment_form')[0].reset();
+                                showNotification('success', response.msg);
+                            } else {
+                                showNotification('error', response.msg);
+                            }
+                            $('.make-appointment-area').unblock();
+                        });
+                    }
+                }
+            });
+
+        });
+
+    </script>
 @endsection
