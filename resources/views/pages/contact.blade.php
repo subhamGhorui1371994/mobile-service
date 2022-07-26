@@ -1,4 +1,5 @@
 @extends('layouts.template')
+@section('title','Contact')
 @section('content')
     <!--Page Title-->
     <section class="page-title" style="background-image:url(assets/images/background/6.jpg);">
@@ -49,14 +50,14 @@
                             </li>
                         </ul>
 
-                        <ul class="social-icon-four">
+                        {{-- <ul class="social-icon-four">
                             <li class="title">Follow Us :</li>
                             <li><a href={{ url('#') }}><i class="la la-facebook"></i></a></li>
                             <li><a href={{ url('#') }}><i class="la la-twitter"></i></a></li>
                             <li><a href={{ url('#') }}><i class="la la-google-plus"></i></a></li>
                             <li><a href={{ url('#') }}><i class="la la-dribbble"></i></a></li>
                             <li><a href={{ url('#') }}><i class="la la-pinterest"></i></a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                 </div>
 
@@ -105,13 +106,17 @@
     <!--End Contact Page Section -->
 
     <!-- Map Section -->
-    <section class="map-section">
+    {{-- <section class="map-section">
         <div class="map-outer">
             <div class="map-canvas" data-zoom="12" data-lat="-37.817085" data-lng="144.955631" data-type="roadmap"
                 data-hue="#ffc400" data-title="Envato" data-icon-path="assets/images/icons/map-marker.png"
                 data-content="Melbourne VIC 3000, Australia<br><a href='mailto:info@youremail.com'>info@youremail.com</a>">
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End Map Section -->
+
+    @section('clients-section')
+        
+    @endsection
 @endsection

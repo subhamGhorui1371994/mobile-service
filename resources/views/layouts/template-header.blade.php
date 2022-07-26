@@ -7,8 +7,9 @@
             <div class="clearfix">
 
                 <div class="logo-outer">
-                    <div class="logo"><a href={{url("/")}}><img src={{url("assets/images/my-images/logo-2.jpg")}} alt="" style="width: 195px; height: 50px"
-                                title=""></a>
+                    <div class="logo"><a href={{ url('/') }}><img
+                                src={{ url('assets/images/my-images/main-logo.png') }} alt="main-logo.png"
+                                style="width: 195px; height: 50px" title=""></a>
                     </div>
                 </div>
 
@@ -19,7 +20,7 @@
                         <div class="icon-box"><span class="la la-home"></span></div>
                         <ul>
                             <li><span>Visit Us</span></li>
-                            <li>{{env('OFFICE_SMALL_ADDRESS','OFFICE_SMALL_ADDRESS')}}</li>
+                            <li>{{ env('OFFICE_SMALL_ADDRESS', 'OFFICE_SMALL_ADDRESS') }}</li>
                         </ul>
                     </div>
 
@@ -28,7 +29,7 @@
                         <div class="icon-box"><span class="la la-phone"></span></div>
                         <ul>
                             <li><span>Call Us</span></li>
-                            <li>{{env('OFFICE_PHONE','8759983102')}}</li>
+                            <li>{{ env('OFFICE_PHONE', '8759983102') }}</li>
                         </ul>
                     </div>
 
@@ -36,14 +37,14 @@
                     <div class="upper-column info-box">
                         <div class="icon-box"><span class="la la-clock-o"></span></div>
                         <ul>
-                            <li><span>{{env('OFFICE_DAY','Mon - Sat')}}</span></li>
-                            <li>{{env('OFFICE_TIME','09:00 To 18:00"')}}</li>
+                            <li><span>{{ env('OFFICE_DAY', 'Mon - Sat') }}</span></li>
+                            <li>{{ env('OFFICE_TIME', '09:00 To 18:00') }}</li>
                         </ul>
                     </div>
 
                     <!--Info Box-->
                     <div class="upper-column info-box btn-box">
-                        <a href="{{url("contact")}}" class="theme-btn btn-style-four">Get Free Quote</a>
+                        <a href="{{ url('contact') }}" class="theme-btn btn-style-four">Get Free Quote</a>
                     </div>
 
                 </div>
@@ -70,7 +71,7 @@
 
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
-                                <li class="current"><a href={{url("/")}}>Home</a>
+                                <li class="current"><a href={{ url('/') }}>Home</a>
                                     {{-- <ul>
                                         <li><a href="index">Home page 01</a></li>
                                         <li><a href="index-2">Home page 02</a></li>
@@ -82,25 +83,25 @@
                                         </li>
                                     </ul> --}}
                                 </li>
-{{--                                <li class="dropdown"><a href={{url("/")}}>About Us</a>--}}
-{{--                                    <ul>--}}
-{{--                                        <li><a href={{url("about-us")}}>About Us</a></li>--}}
-{{--                                        <li><a href={{url("team")}}>Team</a></li>--}}
-{{--                                        <li><a href={{url("faq")}}>FAQ's</a></li>--}}
-{{--                                        <li><a href={{url("pricing")}}>Price List</a></li>--}}
-{{--                                    </ul>--}}
-{{--                                </li>--}}
-                                <li class="dropdown"><a href={{url("#")}}>Services</a>
+                                {{-- <li class="dropdown"><a href={{url("/")}}>About Us</a> --}}
+                                {{-- <ul> --}}
+                                {{-- <li><a href={{url("about-us")}}>About Us</a></li> --}}
+                                {{-- <li><a href={{url("team")}}>Team</a></li> --}}
+                                {{-- <li><a href={{url("faq")}}>FAQ's</a></li> --}}
+                                {{-- <li><a href={{url("pricing")}}>Price List</a></li> --}}
+                                {{-- </ul> --}}
+                                {{-- </li> --}}
+                                <li class="dropdown"><a href={{ url('#') }}>Services</a>
                                     <ul>
-                                        <li><a href={{url("services")}}>Services</a></li>
-                                        <li><a href={{url("service-detail")}}>Desktop Repair</a></li>
-                                        <li><a href={{url("service-detail")}}>Laptop Repair</a></li>
-                                        <li><a href={{url("service-detail")}}>Tablets Repair</a></li>
-                                        <li><a href={{url("service-detail")}}>Smart Phone Repair</a></li>
-                                        <li><a href={{url("service-detail")}}>Services Detail</a></li>
+                                        <li><a href={{ url('services') }}>Services</a></li>
+                                        <li><a href={{ url('service-detail') }}>Desktop Repair</a></li>
+                                        <li><a href={{ url('service-detail') }}>Laptop Repair</a></li>
+                                        <li><a href={{ url('service-detail') }}>Tablets Repair</a></li>
+                                        <li><a href={{ url('service-detail') }}>Smart Phone Repair</a></li>
+                                        <li><a href={{ url('service-detail') }}>Services Detail</a></li>
                                     </ul>
                                 </li>
-{{--                                <li><a href={{url("gallery")}}>Gallery</a></li>--}}
+                                {{-- <li><a href={{url("gallery")}}>Gallery</a></li> --}}
 
                                 {{-- <li class="dropdown"><a href="#">Blog</a>
                                     <ul>
@@ -117,7 +118,7 @@
                                         <li><a href="login">Register / Login</a></li>
                                     </ul>
                                 </li> --}}
-                                <li><a href={{url("contact")}}>Contact</a></li>
+                                <li><a href={{ url('contact') }}>Contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -125,36 +126,36 @@
 
                     <!-- Outer Box -->
                     <div class="outer-box">
-{{--                        <ul class="social-icon-three clearfix">--}}
-{{--                            <li><a href={{url("#")}}><i class="la la-facebook-official"></i></a></li>--}}
-{{--                            <li><a href={{url("#")}}><i class="la la-twitter"></i></a></li>--}}
-{{--                            <li><a href={{url("#")}}><i class="la la-google-plus"></i></a></li>--}}
-{{--                            <li><a href={{url("#")}}><i class="la la-dribbble"></i></a></li>--}}
-{{--                            <li><a href={{url("#")}}><i class="la la-pinterest"></i></a></li>--}}
-{{--                        </ul>--}}
+                        {{-- <ul class="social-icon-three clearfix"> --}}
+                        {{-- <li><a href={{url("#")}}><i class="la la-facebook-official"></i></a></li> --}}
+                        {{-- <li><a href={{url("#")}}><i class="la la-twitter"></i></a></li> --}}
+                        {{-- <li><a href={{url("#")}}><i class="la la-google-plus"></i></a></li> --}}
+                        {{-- <li><a href={{url("#")}}><i class="la la-dribbble"></i></a></li> --}}
+                        {{-- <li><a href={{url("#")}}><i class="la la-pinterest"></i></a></li> --}}
+                        {{-- </ul> --}}
 
                         <!--Search Box-->
-{{--                        <div class="search-box-outer">--}}
-{{--                            <div class="dropdown">--}}
-{{--                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3"--}}
-{{--                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span--}}
-{{--                                        class="la la-search"></span></button>--}}
-{{--                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">--}}
-{{--                                    <li class="panel-outer">--}}
-{{--                                        <div class="form-container">--}}
-{{--                                            <form method="post" action="blog">--}}
-{{--                                                <div class="form-group">--}}
-{{--                                                    <input type="search" name="field-name" value=""--}}
-{{--                                                        placeholder="Search Here" required>--}}
-{{--                                                    <button type="submit" class="search-btn"><span--}}
-{{--                                                            class="la la-search"></span></button>--}}
-{{--                                                </div>--}}
-{{--                                            </form>--}}
-{{--                                        </div>--}}
-{{--                                    </li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
+                        {{-- <div class="search-box-outer"> --}}
+                        {{-- <div class="dropdown"> --}}
+                        {{-- <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" --}}
+                        {{-- data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span --}}
+                        {{-- class="la la-search"></span></button> --}}
+                        {{-- <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3"> --}}
+                        {{-- <li class="panel-outer"> --}}
+                        {{-- <div class="form-container"> --}}
+                        {{-- <form method="post" action="blog"> --}}
+                        {{-- <div class="form-group"> --}}
+                        {{-- <input type="search" name="field-name" value="" --}}
+                        {{-- placeholder="Search Here" required> --}}
+                        {{-- <button type="submit" class="search-btn"><span --}}
+                        {{-- class="la la-search"></span></button> --}}
+                        {{-- </div> --}}
+                        {{-- </form> --}}
+                        {{-- </div> --}}
+                        {{-- </li> --}}
+                        {{-- </ul> --}}
+                        {{-- </div> --}}
+                        {{-- </div> --}}
                     </div>
                 </div>
             </div>
@@ -167,8 +168,8 @@
         <div class="auto-container clearfix">
             <!--Logo-->
             <div class="logo pull-left">
-                <a href={{url("/")}} title=""><img src={{url("assets/images/logo-2.png")}} alt=""
-                        title=""></a>
+                <a href={{ url('/') }} title=""><img
+                        src="{{ url('assets/images/my-images/main-logo.png') }}" alt="main-logo.png" title=""></a>
             </div>
             <!--Right Col-->
             <div class="pull-right">
@@ -176,7 +177,7 @@
                 <nav class="main-menu">
                     <div class="navbar-collapse show collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current"><a href={{url("/")}}>Home</a>
+                            <li class="current"><a href={{ url('/') }}>Home</a>
                                 {{-- <ul>
                                     <li><a href="index">Home page 01</a></li>
                                     <li><a href="index-2">Home page 02</a></li>
@@ -188,41 +189,41 @@
                                     </li>
                                 </ul> --}}
                             </li>
-                            <li class="dropdown"><a href={{url("#")}}>About Us</a>
+                            {{-- <li class="dropdown"><a href={{ url('#') }}>About Us</a>
                                 <ul>
-                                    <li><a href={{url("about-us")}}>About Us</a></li>
-                                    <li><a href={{url("team")}}>Team</a></li>
-                                    <li><a href={{url("faq")}}>FAQ's</a></li>
-                                    <li><a href={{url("pricing")}}>Price List</a></li>
+                                    <li><a href={{ url('about-us') }}>About Us</a></li>
+                                    <li><a href={{ url('team') }}>Team</a></li>
+                                    <li><a href={{ url('faq') }}>FAQ's</a></li>
+                                    <li><a href={{ url('pricing') }}>Price List</a></li>
+                                </ul>
+                            </li> --}}
+                            <li class="dropdown"><a href={{ url('#') }}>Services</a>
+                                <ul>
+                                    <li><a href={{ url('services') }}>Services</a></li>
+                                    <li><a href={{ url('service-detail') }}>Desktop Repair</a></li>
+                                    <li><a href={{ url('service-detail') }}>Laptop Repair</a></li>
+                                    <li><a href={{ url('service-detail') }}>Tablets Repair</a></li>
+                                    <li><a href={{ url('service-detail') }}>Smart Phone Repair</a></li>
+                                    <li><a href={{ url('service-detail') }}>Services Detail</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a href={{url("#")}}>Services</a>
+                            {{-- <li><a href={{ url('gallery') }}>Gallery</a></li>
+                            <li class="dropdown"><a href={{ url('#') }}>Blog</a>
                                 <ul>
-                                    <li><a href={{url("services")}}>Services</a></li>
-                                    <li><a href={{url("service-detail")}}>Desktop Repair</a></li>
-                                    <li><a href={{url("service-detail")}}>Laptop Repair</a></li>
-                                    <li><a href={{url("service-detail")}}>Tablets Repair</a></li>
-                                    <li><a href={{url("service-detail")}}>Smart Phone Repair</a></li>
-                                    <li><a href={{url("service-detail")}}>Services Detail</a></li>
+                                    <li><a href={{ url('blog') }}>Blog</a></li>
+                                    <li><a href={{ url('blog-detail') }}>Blog Detail</a></li>
                                 </ul>
                             </li>
-                            <li><a href={{url("gallery")}}>Gallery</a></li>
-                            <li class="dropdown"><a href={{url("#")}}>Blog</a>
+                            <li class="dropdown"><a href={{ url('#') }}>shop</a>
                                 <ul>
-                                    <li><a href={{url("blog")}}>Blog</a></li>
-                                    <li><a href={{url("blog-detail")}}>Blog Detail</a></li>
+                                    <li><a href={{ url('products') }}>Our Products</a></li>
+                                    <li><a href={{ url('product-single') }}>Product Details</a></li>
+                                    <li><a href={{ url('shopping-cart') }}>Shopping Cart</a></li>
+                                    <li><a href={{ url('checkout') }}>Checkout</a></li>
+                                    <li><a href={{ url('login') }}>Register / Login</a></li>
                                 </ul>
-                            </li>
-                            <li class="dropdown"><a href={{url("#")}}>shop</a>
-                                <ul>
-                                    <li><a href={{url("products")}}>Our Products</a></li>
-                                    <li><a href={{url("product-single")}}>Product Details</a></li>
-                                    <li><a href={{url("shopping-cart")}}>Shopping Cart</a></li>
-                                    <li><a href={{url("checkout")}}>Checkout</a></li>
-                                    <li><a href={{url("login")}}>Register / Login</a></li>
-                                </ul>
-                            </li>
-                            <li><a href={{url("contact")}}>Contact</a></li>
+                            </li> --}}
+                            <li><a href={{ url('contact') }}>Contact</a></li>
                         </ul>
                     </div>
                 </nav><!-- Main Menu End-->
