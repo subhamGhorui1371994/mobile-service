@@ -33,12 +33,13 @@ class Appointment extends Model
 
     static public function getListDataTable($order_column, $order_column_by, $limit, $offset, $search): array
     {
-        $query = DB::table((new Service)->getTable());
+        $query = DB::table((new Appointment)->getTable());
 
         if (!empty($search)) {
             $query->where(function ($query) use ($search) {
                 $query->Where('full_name', 'like', '%' . $search . '%');
                 $query->Where('contact_number', 'like', '%' . $search . '%');
+                $query->Where('service', 'like', '%' . $search . '%');
             });
         }
 
