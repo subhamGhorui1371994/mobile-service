@@ -44,7 +44,7 @@
 
                     <!--Info Box-->
                     <div class="upper-column info-box btn-box">
-                        <a href="{{ url('contact') }}"" class="theme-btn btn-style-four">Get Free Quote</a>
+                        <a href="{{ url('contact') }}" class="theme-btn btn-style-four">Get Free Quote</a>
                     </div>
 
                 </div>
@@ -169,7 +169,7 @@
             <!--Logo-->
             <div class="logo pull-left">
                 <a href="{{ url('/') }}" title=""><img
-                        src="{{ url('assets/images/my-images/main-logo.png') }}"" alt="main-logo.png"
+                        src="{{ url('assets/images/my-images/main-logo.png') }}" alt="main-logo.png"
                         title=""></a>
             </div>
             <!--Right Col-->

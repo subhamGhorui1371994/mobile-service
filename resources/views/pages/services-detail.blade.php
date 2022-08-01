@@ -2,7 +2,7 @@
 @section('title', 'Services Details')
 @section('content')
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(assets/images/background/6.jpg);">
+    <section class="page-title" style="background-image:url(assets/images/my-images/background/bs.png);">
         <div class="auto-container">
             <div class="inner-container clearfix">
                 <h1>Service Detail</h1>

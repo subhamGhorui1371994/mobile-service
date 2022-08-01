@@ -2,7 +2,7 @@
 @section('title', 'Contact')
 @section('content')
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(assets/images/background/6.jpg);">
+    <section class="page-title" style="background-image:url(assets/images/my-images/background/bs.png);">
         <div class="auto-container">
             <div class="inner-container clearfix">
                 <h1>Contact Us</h1>
@@ -27,26 +27,30 @@
                         <ul class="contact-info">
                             <li>
                                 <span class="icon la la-home"></span>
-                                <p><strong>32, Breaking Street,</strong></p>
-                                <p>2nd cros, Newyork ,USA 10002</p>
+                                <p>
+                                    <strong>Address</strong><br>
+                                    {{ env('OFFICE_ADDRESS', 'Gopalpur, Keshiary, Paschim Midnapur, West Bengal 721133') }}
+                                </p>
                             </li>
 
                             <li>
                                 <span class="icon la la-phone"></span>
                                 <p><strong>Call Us</strong></p>
-                                <p>+321 4567 89 012 & 79 023</p>
+                                <p>{{ env('OFFICE_PHONE', '8759983102') }}</p>
                             </li>
 
                             <li>
                                 <span class="icon la la-envelope"></span>
                                 <p><strong>Mail Us</strong></p>
-                                <p><a href="{{ url('#') }}">Support@Repairplus.com</a></p>
+                                <p>
+                                    <a href="mailto:{{ env('OFFICE_EMAIL', 'doorservice.wb@gmail.com') }}?subject = Feedback Or Contact&body = Message">{{ env('OFFICE_EMAIL', 'doorservice.wb@gmail.com') }}</a>
+                                </p>
                             </li>
 
                             <li>
                                 <span class="icon la la-clock-o"></span>
-                                <p><strong>Opening Time</strong></p>
-                                <p>Mon - Sat: 09.00am to 18.00pm</p>
+                                <p><strong>{{ env('OFFICE_DAY', 'Mon - Sat') }}</strong></p>
+                                <p>{{ env('OFFICE_TIME', '09:00 To 18:00') }}</p>
                             </li>
                         </ul>
 
