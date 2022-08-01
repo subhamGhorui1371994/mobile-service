@@ -20,8 +20,8 @@
         <div class="auto-container">
             <div class="row">
                 <!-- Service Block -->
-                @if ($services)
-                    @foreach ($services as $key => $service)
+                @if ($dbServices)
+                    @foreach ($dbServices as $key => $service)
                         <div class="service-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                             <div class="inner-box">
                                 <div class="image-box">

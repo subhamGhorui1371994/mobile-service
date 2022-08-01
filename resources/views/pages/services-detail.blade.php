@@ -29,26 +29,26 @@
 
                         <div class="lower-content">
                             {!! html_entity_decode($serviceDetails->description) !!}
-                            <div class="two-column">
-                                <div class="row clearfix">
-                                    <div class="info-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                                        <h3>We Fix It</h3>
-                                        <p>Bring in your smartphone or tablet and we can repair cracked screens, buttons,
-                                            built in cameras, charge ports, speakers, headphone jacks, and more. We install
-                                            new batteries and can even install a screen protector to keep your Tablet Repair
-                                            device safe from future damage. Visit your nearest store today.</p>
-                                    </div>
+{{--                            <div class="two-column">--}}
+{{--                                <div class="row clearfix">--}}
+{{--                                    <div class="info-column col-xl-6 col-lg-12 col-md-12 col-sm-12">--}}
+{{--                                        <h3>We Fix It</h3>--}}
+{{--                                        <p>Bring in your smartphone or tablet and we can repair cracked screens, buttons,--}}
+{{--                                            built in cameras, charge ports, speakers, headphone jacks, and more. We install--}}
+{{--                                            new batteries and can even install a screen protector to keep your Tablet Repair--}}
+{{--                                            device safe from future damage. Visit your nearest store today.</p>--}}
+{{--                                    </div>--}}
 
-                                    <div class="image-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                                        <div class="image wow fadeIn"><a
-                                                href="{{ url('assets/images/resource/image-3.jpg') }}"
-                                                class="lightbox-image"><img
-                                                    src="{{ url('assets/images/resource/image-3.jpg') }}"
-                                                    alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+{{--                                    <div class="image-column col-xl-6 col-lg-12 col-md-12 col-sm-12">--}}
+{{--                                        <div class="image wow fadeIn"><a--}}
+{{--                                                href="{{ url('assets/images/resource/image-3.jpg') }}"--}}
+{{--                                                class="lightbox-image"><img--}}
+{{--                                                    src="{{ url('assets/images/resource/image-3.jpg') }}"--}}
+{{--                                                    alt=""></a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </div>
                     </div><!-- Service Detail -->
                 </div>
@@ -58,16 +58,16 @@
                     <aside class="sidebar services-sidebar">
 
                         <!-- Services Cat List -->
-                        <div class="sidebar-widget categories">
-                            <ul class="services--list">
-                                <li class="active"><a href="{{ url('service-detail') }}">Desktop Repair</a></li>
-                                <li><a href="{{ url('service-detail') }}">Printers Repair</a></li>
-                                <li><a href="{{ url('service-detail') }}">Tablets / IPAD Repair</a></li>
-                                <li><a href="{{ url('service-detail') }}">Smart Phone Repair</a></li>
-                                <li><a href="{{ url('service-detail') }}">Laptop / MAC Repair</a></li>
-                                <li><a href="{{ url('service-detail') }}">Game Console Repair</a></li>
-                            </ul>
-                        </div>
+{{--                        <div class="sidebar-widget categories">--}}
+{{--                            <ul class="services--list">--}}
+{{--                                <li class="active"><a href="{{ url('service-detail') }}">Desktop Repair</a></li>--}}
+{{--                                <li><a href="{{ url('service-detail') }}">Printers Repair</a></li>--}}
+{{--                                <li><a href="{{ url('service-detail') }}">Tablets / IPAD Repair</a></li>--}}
+{{--                                <li><a href="{{ url('service-detail') }}">Smart Phone Repair</a></li>--}}
+{{--                                <li><a href="{{ url('service-detail') }}">Laptop / MAC Repair</a></li>--}}
+{{--                                <li><a href="{{ url('service-detail') }}">Game Console Repair</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
 
                         <!-- Brochure -->
                         <div class="sidebar-widget brochure">
