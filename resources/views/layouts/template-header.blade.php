@@ -93,17 +93,10 @@
                                 {{-- </li> --}}
                                 <li class="dropdown"><a href="{{ url('#') }}">Services</a>
                                     <ul>
-                                        {{-- <li><a href="{{ url('services') }}">Services</a></li>
-                                        <li><a href="{{ url('service-detail') }}">Desktop Repair</a></li>
-                                        <li><a href="{{ url('service-detail') }}">Laptop Repair</a></li>
-                                        <li><a href="{{ url('service-detail') }}">Tablets Repair</a></li>
-                                        <li><a href="{{ url('service-detail') }}">Smart Phone Repair</a></li>
-                                        <li><a href="{{ url('service-detail') }}">Services Detail</a></li> --}}
-
+                                         <li><a href="{{ url('services') }}">Services</a></li>
                                         @if ($services)
-                                            @foreach ($services as $k => $service)
-                                                {{-- <li><a href="{{ url('service-detail') }}" value="{{ $service }}">{{ $service }}</a></li> --}}
-                                                <li><a href={{ url('service-detail/' . $service['id']) }} value="{{ $service }}">{{ $service }}</a></li>
+                                            @foreach ($services as $id => $service)
+                                                <li><a href="{{ url('service-detail/' . $id) }}">{{ $service }}</a></li>
                                             @endforeach
                                         @endif
                                     </ul>

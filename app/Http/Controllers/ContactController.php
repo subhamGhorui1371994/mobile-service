@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Appointment;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
 class ContactController extends Controller
@@ -15,7 +16,8 @@ class ContactController extends Controller
 
     public function index()
     {
-        return view('pages.contact');
+        $services = DB::table('services')->pluck('title','id');
+        return view('pages.contact', compact('services'));
     }
 
     public function submitContactForm(Request $request)
