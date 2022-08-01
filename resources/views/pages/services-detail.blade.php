@@ -74,7 +74,8 @@
                             <div class="brochure-box">
                                 <span>Quick Contact</span>
                                 <h4>Get Solution</h4>
-                                <p>Contact us at the Constration office nearest to you or submit a business inquiry online.
+                                <p>
+                                    Contact Us at Our Physical Office or Submit a Business Inquiry Online.
                                 </p>
                                 <a href="{{ url('contact') }}" class="theme-btn btn-style-one">Contact</a>
                             </div>
@@ -87,7 +88,7 @@
     <!-- End Service Detail Section -->
 
     <!--Clients Section-->
-    <section class="clients-section alternate">
+    {{-- <section class="clients-section alternate">
         <div class="sponsors-outer">
             <!--Sponsors Carousel-->
             <ul class="sponsors-carousel owl-carousel owl-theme">
@@ -133,6 +134,6 @@
                 </li>
             </ul>
         </div>
-    </section>
+    </section> --}}
     <!--End Clients Section-->
 @endsection

@@ -1,4 +1,5 @@
 @extends('layouts.template')
+@section('title','Home')
 @section('content')
     <!--Main Slider-->
     <section class="main-slider">
@@ -48,7 +49,7 @@
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
                                 {{-- <a href="{{ url('Product') }}" class="theme-btn btn-style-one"><span>Buy Now</span></a> --}}
-                                <a href="{{ url('content') }}" class="theme-btn btn-style-two"><span>Contact us</span></a>
+                                <a href="{{ url('contact') }}" class="theme-btn btn-style-two"><span>Contact us</span></a>
                             </div>
                         </div>
                     </li>
@@ -96,7 +97,7 @@
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
                                 {{-- <a href="{{ url('Product') }}" class="theme-btn btn-style-one"><span>Buy Now</span></a> --}}
-                                <a href="{{ url('content') }}" class="theme-btn btn-style-two"><span>Contact us</span></a>
+                                <a href="{{ url('contact') }}" class="theme-btn btn-style-two"><span>Contact us</span></a>
                             </div>
                         </div>
                     </li>
@@ -107,7 +108,7 @@
     </section>
     <!--End Main Slider-->
 
-    <!-- About Us -->
+<!-- About Us -->
     {{-- <section class="about-us"> --}}
     {{-- <div class="auto-container"> --}}
     {{-- <div class="row clearfix"> --}}
@@ -144,7 +145,7 @@
     {{-- </div> --}}
     {{-- </div> --}}
     {{-- </section> --}}
-    <!-- End About Us -->
+<!-- End About Us -->
 
 
 
@@ -230,7 +231,7 @@
     </section>
     <!--End Fun Fact Section -->
 
-    <!-- Projects Section -->
+<!-- Projects Section -->
     {{-- <section class="projects-section style-two"> --}}
     {{-- <div class="auto-container"> --}}
     {{-- <div class="sec-title text-center"> --}}
@@ -366,7 +367,7 @@
     {{-- </div> --}}
     {{-- </div> --}}
     {{-- </section> --}}
-    <!--End Projects Section -->
+<!--End Projects Section -->
 
     <!-- Call Back Section -->
     <section class="call-back-section" style="background-image: url(assets/images/background/5.jpg);">
@@ -375,7 +376,7 @@
                 <div class="row clearfix">
                     <div class="content-column col-lg-7 col-md-12 col-sm-12">
                         <div class="inner-column">
-                            <div class="{{ url('content') }}">
+                            <div class="{{ url('contact') }}">
                                 <h3 class="mt-4">Do You Need Any Services ?</h3>
                                 <div class="text">If You Need Any Kind of Service, <br> Please Contact Us on This Number
                                     <span class="la la-phone"></span>
@@ -471,7 +472,7 @@
     </section>
     <!--End Call Back Section -->
 
-    <!-- Team Section -->
+<!-- Team Section -->
     {{-- <section class="team-section"> --}}
     {{-- <div class="auto-container"> --}}
     {{-- <div class="sec-title text-center"> --}}
@@ -630,7 +631,7 @@
     {{-- </div> --}}
     {{-- </div> --}}
     {{-- </section> --}}
-    <!--End News Section -->
+<!--End News Section -->
 @endsection
 
 @section('footer_script')
