@@ -41,12 +41,18 @@
                                 <h2 class="widget-title">Our Services</h2>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="{{ url('service.html') }}">Smart Phone Repair</a></li>
+                                        {{-- <li><a href="{{ url('service.html') }}">Smart Phone Repair</a></li>
                                         <li><a href="{{ url('service.html') }}">Desktop & Laptop</a></li>
                                         <li><a href="{{ url('service.html') }}">Tablets & iPad Repair</a></li>
                                         <li><a href="{{ url('service.html') }}">Desktop & Laptop</a></li>
                                         <li><a href="{{ url('service.html') }}">LCD & LED TV Repair</a></li>
-                                        <li><a href="{{ url('service.html') }}">MP3 & MP4 Player</a></li>
+                                        <li><a href="{{ url('service.html') }}">MP3 & MP4 Player</a></li> --}}
+
+                                        @if ($services)
+                                            @foreach ($services as $id => $service)
+                                                <li><a href="{{ url('service-detail/' . $id) }}">{{ $service }}</a></li>
+                                            @endforeach
+                                        @endif
                                     </ul>
                                 </div>
                             </div>
