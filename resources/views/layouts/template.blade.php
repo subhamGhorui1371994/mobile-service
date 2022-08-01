@@ -5,21 +5,21 @@
     <meta charset="utf-8">
     <title>@yield('title')</title>
     <!-- Stylesheets -->
-    <link href={{ url('assets/css/bootstrap.css') }} rel="stylesheet">
-    <link href={{ url('assets/plugins/revolution/css/settings.css') }} rel="stylesheet" type="text/css">
+    <link href="{{ url('assets/css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ url('assets/plugins/revolution/css/settings.css') }}" rel="stylesheet" type="text/css">
     <!-- REVOLUTION SETTINGS STYLES -->
-    <link href={{ url('assets/plugins/revolution/css/layers.css') }} rel="stylesheet" type="text/css">
+    <link href="{{ url('assets/plugins/revolution/css/layers.css') }}" rel="stylesheet" type="text/css">
     <!-- REVOLUTION LAYERS STYLES -->
-    <link href={{ url('assets/plugins/revolution/css/navigation.css') }} rel="stylesheet" type="text/css">
+    <link href="{{ url('assets/plugins/revolution/css/navigation.css') }}" rel="stylesheet" type="text/css">
     <!-- REVOLUTION NAVIGATION STYLES -->
-    <link href={{ url('assets/css/style.css') }} rel="stylesheet">
-    <link href={{ url('assets/css/responsive.css') }} rel="stylesheet">
-    <meta name="_token" content="{{csrf_token()}}"/>
+    <link href="{{ url('assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ url('assets/css/responsive.css') }}" rel="stylesheet">
+    <meta name="_token" content="{{ csrf_token() }}" />
     <!--Color Themes-->
-    <link id="theme-color-file" href={{ url('assets/css/color-themes/default-theme.css') }} rel="stylesheet">
+    <link id="theme-color-file" href="{{ url('assets/css/color-themes/default-theme.css') }}" rel="stylesheet">
 
-    <link rel="shortcut icon" href={{ url('assets/images/favicon.png') }} type="image/x-icon">
-    <link rel="icon" href={{ url('assets/images/favicon.png') }} type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url('assets/images/favicon.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url('assets/images/favicon.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -143,29 +143,29 @@
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="la la-angle-double-up"></span></div>
 
 
-    <script src={{ url('assets/js/jquery.js') }}></script>
-    <script src={{ url('assets/js/popper.min.js') }}></script>
-    <script src={{ url('assets/js/bootstrap.min.js') }}></script>
+    <script src="{{ url('assets/js/jquery.js') }}"></script>
+    <script src="{{ url('assets/js/popper.min.js') }}"></script>
+    <script src="{{ url('assets/js/bootstrap.min.js') }}"></script>
     <!--Revolution Slider-->
-    <script src={{ url('assets/plugins/revolution/js/jquery.themepunch.revolution.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/jquery.themepunch.tools.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.migration.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js') }}></script>
-    <script src={{ url('assets/plugins/revolution/js/extensions/revolution.extension.video.min.js') }}></script>
-    <script src={{ url('assets/js/main-slider-script.js') }}></script>
+    <script src="{{ url('assets/plugins/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.carousel.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.migration.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
+    <script src="{{ url('assets/js/main-slider-script.js') }}"></script>
     <!--End Revolution Slider-->
-    <script src={{ url('assets/js/jquery.fancybox.js') }}></script>
-    <script src={{ url('assets/js/owl.js') }}></script>
-    <script src={{ url('assets/js/wow.js') }}></script>
-    <script src={{ url('assets/js/appear.js') }}></script>
-    <script src={{ url('assets/js/mixitup.js') }}></script>
-    <script src={{ url('assets/js/script.js') }}></script>
+    <script src="{{ url('assets/js/jquery.fancybox.js') }}"></script>
+    <script src="{{ url('assets/js/owl.js') }}"></script>
+    <script src="{{ url('assets/js/wow.js') }}"></script>
+    <script src="{{ url('assets/js/appear.js') }}"></script>
+    <script src="{{ url('assets/js/mixitup.js') }}"></script>
+    <script src="{{ url('assets/js/script.js') }}"></script>
 
     <script src="//unpkg.com/notie" type="text/javascript"></script>
 

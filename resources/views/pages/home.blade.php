@@ -375,7 +375,7 @@
                 <div class="row clearfix">
                     <div class="content-column col-lg-7 col-md-12 col-sm-12">
                         <div class="inner-column">
-                            <div class={{ url('content') }}>
+                            <div class="{{ url('content') }}">
                                 <h3 class="mt-4">Do You Need Any Services ?</h3>
                                 <div class="text">If You Need Any Kind of Service, <br> Please Contact Us on This Number
                                     <span class="la la-phone"></span>
@@ -402,8 +402,8 @@
                                 <form id="appointment_form">
                                     <div class="row">
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="text" name="full_name" placeholder="Your Name*" id="full_name"
-                                                data-msg-required="Name field is required" required>
+                                            <input type="text" name="full_name" placeholder="Your Name*"
+                                                id="full_name" data-msg-required="Name field is required" required>
                                             <span class="validation-errors"></span>
                                         </div>
 
@@ -415,11 +415,13 @@
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <input type="email" name="email" id="email" placeholder="E-mail Address">
+                                            <input type="email" name="email" id="email"
+                                                placeholder="E-mail Address">
                                         </div>
 
                                         <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                            <select name="service" id="service" data-msg-required="Please select a service." required>
+                                            <select name="service" id="service"
+                                                data-msg-required="Please select a service." required>
                                                 <option value="">Select Service</option>
                                                 @if ($services)
                                                     @foreach ($services as $k => $service)
@@ -431,7 +433,8 @@
                                         </div>
 
                                         <div class="form-group col-lg- col-md-12 col-sm-12">
-                                            Date: <input type="date" id="date" name="date" placeholder="Date">
+                                            Date: <input type="date" id="date" name="date"
+                                                placeholder="Date">
                                         </div>
 
                                         <div class="form-group col-lg- col-md-12 col-sm-12">
@@ -631,43 +634,49 @@
 @endsection
 
 @section('footer_script')
-
-    <link href="{{ URL::asset('assets/admin/js/jquery-validation/jquery-validate.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ URL::asset('assets/admin/js/jquery-validation/jquery-validate.css') }}" rel="stylesheet"
+        type="text/css">
 
     <script type="text/javascript" src="{{ URL::asset('assets/admin/js/jquery-validation/jquery.validate.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/jquery-validation/additional-methods.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/jquery-validation/additional-methods.js') }}">
+    </script>
     <script type="text/javascript" src="{{ URL::asset('assets/js/jquery.blockUI.js') }}"></script>
 
-    <link href="{{ URL::asset('assets/admin/js/select2/dist/css/select2.min.css') }}" rel="stylesheet"/>
+    <link href="{{ URL::asset('assets/admin/js/select2/dist/css/select2.min.css') }}" rel="stylesheet" />
     <script type="text/javascript" src="{{ URL::asset('assets/admin/js/select2/dist/js/select2.min.js') }}"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('#appointment_form').validate({
                 ignore: [],
                 errorPlacement: function errorPlacement(error, element) {
                     $(element).parents('div.form-group').find('span.validation-errors').append(error);
                 },
                 onfocusout: false,
-                highlight: function (element, errorClass) {
+                highlight: function(element, errorClass) {
                     if ($(element).hasClass('select-2')) {
                         $(element).next('.select2-container').addClass(errorClass);
                     } else {
                         $(element).addClass(errorClass);
                     }
                 },
-                unhighlight: function (element, errorClass) {
+                unhighlight: function(element, errorClass) {
                     if ($(element).hasClass('select-2')) {
                         $(element).next('.select2-container').removeClass(errorClass);
                     } else {
                         $(element).removeClass(errorClass);
                     }
                 },
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     if ($(form).valid()) {
                         $('.make-appointment-area').block({
-                            message: '<h1 style="font-size: 26px;">Processing your request. Please wait...</h1><img src="'+base_url +'/assets/img/loader.gif" style="width: 100px;margin-bottom: 20px">',
-                            css: {border: '3px solid #a00', 'top': '30%!important'}
+                            message: '<h1 style="font-size: 26px;">Processing your request. Please wait...</h1><img src="' +
+                                base_url +
+                                '/assets/img/loader.gif" style="width: 100px;margin-bottom: 20px">',
+                            css: {
+                                border: '3px solid #a00',
+                                'top': '30%!important'
+                            }
                         });
                         $.ajax({
                             url: base_url + '/submit-appointment',
@@ -682,9 +691,11 @@
                                 'location': $('#location').val(),
                                 'problem': $('#problem').val(),
                             },
-                            headers: {'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')},
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                            },
                             dataType: 'json',
-                        }).done(function (response) {
+                        }).done(function(response) {
                             if (response.status === true) {
                                 $('#appointment_form')[0].reset();
                                 showNotification('success', response.msg);
@@ -698,6 +709,5 @@
             });
 
         });
-
     </script>
 @endsection

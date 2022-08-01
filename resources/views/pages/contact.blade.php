@@ -1,5 +1,5 @@
 @extends('layouts.template')
-@section('title','Contact')
+@section('title', 'Contact')
 @section('content')
     <!--Page Title-->
     <section class="page-title" style="background-image:url(assets/images/background/6.jpg);">
@@ -7,7 +7,7 @@
             <div class="inner-container clearfix">
                 <h1>Contact Us</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href={{ url('/') }}>Home</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
                     <li>Contact Us</li>
                 </ul>
             </div>
@@ -40,7 +40,7 @@
                             <li>
                                 <span class="icon la la-envelope"></span>
                                 <p><strong>Mail Us</strong></p>
-                                <p><a href={{ url('#') }}>Support@Repairplus.com</a></p>
+                                <p><a href="{{ url('#') }}">Support@Repairplus.com</a></p>
                             </li>
 
                             <li>
@@ -52,11 +52,11 @@
 
                         {{-- <ul class="social-icon-four">
                             <li class="title">Follow Us :</li>
-                            <li><a href={{ url('#') }}><i class="la la-facebook"></i></a></li>
-                            <li><a href={{ url('#') }}><i class="la la-twitter"></i></a></li>
-                            <li><a href={{ url('#') }}><i class="la la-google-plus"></i></a></li>
-                            <li><a href={{ url('#') }}><i class="la la-dribbble"></i></a></li>
-                            <li><a href={{ url('#') }}><i class="la la-pinterest"></i></a></li>
+                            <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
+                            <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
+                            <li><a href="{{ url('#') }}"><i class="la la-google-plus"></i></a></li>
+                            <li><a href="{{ url('#') }}"><i class="la la-dribbble"></i></a></li>
+                            <li><a href="{{ url('#') }}"><i class="la la-pinterest"></i></a></li>
                         </ul> --}}
                     </div>
                 </div>
@@ -116,7 +116,7 @@
     </section> --}}
     <!-- End Map Section -->
 
-    @section('clients-section')
-        
-    @endsection
+@section('clients-section')
+
+@endsection
 @endsection

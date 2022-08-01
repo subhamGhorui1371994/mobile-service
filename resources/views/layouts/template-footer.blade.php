@@ -12,7 +12,7 @@
                             <div class="footer-widget about-widget">
                                 <div class="footer-logo">
                                     <figure>
-                                        <a href={{ url('/') }}><img
+                                        <a href="{{ url('/') }}"><img
                                                 src="{{ url('assets/images/my-images/footer-logo.png') }}"
                                                 alt="footer-logo.png"></a>
                                     </figure>
@@ -25,11 +25,11 @@
                                         service & maintenance business.</div>
                                     {{-- <ul class="social-icon-two">
                                         <li>Follow Us:</li>
-                                        <li><a href={{ url('#') }}><i class="la la-facebook"></i></a></li>
-                                        <li><a href={{ url('#') }}><i class="la la-twitter"></i></a></li>
-                                        <li><a href={{ url('#') }}><i class="la la-linkedin"></i></a></li>
-                                        <li><a href={{ url('#') }}><i class="la la-google-plus"></i></a></li>
-                                        <li><a href={{ url('#') }}><i class="la la-pinterest-p"></i></a></li>
+                                        <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
+                                        <li><a href="{{ url('#') }}"><i class="la la-twitter"></i></a></li>
+                                        <li><a href="{{ url('#') }}"><i class="la la-linkedin"></i></a></li>
+                                        <li><a href="{{ url('#') }}"><i class="la la-google-plus"></i></a></li>
+                                        <li><a href="{{ url('#') }}"><i class="la la-pinterest-p"></i></a></li>
                                     </ul> --}}
                                 </div>
                             </div>
@@ -41,12 +41,12 @@
                                 <h2 class="widget-title">Our Services</h2>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href={{ url('service.html') }}>Smart Phone Repair</a></li>
-                                        <li><a href={{ url('service.html') }}>Desktop & Laptop</a></li>
-                                        <li><a href={{ url('service.html') }}>Tablets & iPad Repair</a></li>
-                                        <li><a href={{ url('service.html') }}>Desktop & Laptop</a></li>
-                                        <li><a href={{ url('service.html') }}>LCD & LED TV Repair</a></li>
-                                        <li><a href={{ url('service.html') }}>MP3 & MP4 Player</a></li>
+                                        <li><a href="{{ url('service.html') }}">Smart Phone Repair</a></li>
+                                        <li><a href="{{ url('service.html') }}">Desktop & Laptop</a></li>
+                                        <li><a href="{{ url('service.html') }}">Tablets & iPad Repair</a></li>
+                                        <li><a href="{{ url('service.html') }}">Desktop & Laptop</a></li>
+                                        <li><a href="{{ url('service.html') }}">LCD & LED TV Repair</a></li>
+                                        <li><a href="{{ url('service.html') }}">MP3 & MP4 Player</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -64,22 +64,23 @@
                                 <!--Footer Column-->
                                 <div class="widget-content">
                                     <div class="post">
-                                        <div class="thumb"><a href={{ url('blog-detail.html') }}><img
-                                                    src={{ url('assets/images/resource/post-thumb-1.jpg') }}
+                                        <div class="thumb"><a href="{{ url('blog-detail.html') }}"><img
+                                                    src="{{ url('assets/images/resource/post-thumb-1.jpg') }}"
                                                     alt="post-thumb-1.jpg"></a>
                                         </div>
-                                        <h4><a href={{ url('blog-detail.html') }}>The Summer Sppecial Day Out</a></h4>
-                                        <a href={{ url('blog-detail.html') }} class="read-more">Read More</a>
+                                        <h4><a href="{{ url('blog-detail.html') }}">The Summer Sppecial Day Out</a>
+                                        </h4>
+                                        <a href="{{ url('blog-detail.html') }}" class="read-more">Read More</a>
                                     </div>
 
                                     <div class="post">
-                                        <div class="thumb"><a href={{ url('blog-detail.html') }}><img
-                                                    src={{ url('assets/images/resource/post-thumb-2.jpg') }}
+                                        <div class="thumb"><a href="{{ url('blog-detail.html') }}"><img
+                                                    src="{{ url('assets/images/resource/post-thumb-2.jpg') }}"
                                                     alt="post-thumb-2.jpg"></a>
                                         </div>
-                                        <h4><a href={{ url('blog-detail.html') }}>Drop & Drug Your Tagline Here</a>
+                                        <h4><a href="{{ url('blog-detail.html') }}">Drop & Drug Your Tagline Here</a>
                                         </h4>
-                                        <a href={{ url('blog-detail.html') }} class="read-more">Read More</a>
+                                        <a href="{{ url('blog-detail.html') }}" class="read-more">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -126,17 +127,17 @@
             <div class="inner-container clearfix">
                 <div class="footer-nav">
                     <ul class="clearfix">
-                        <li><a href={{ url('/') }}>Home</a></li>
-                        {{-- <li><a href={{ url('/about-us') }}>About Us</a></li> --}}
-                        <li><a href={{ url('/services') }}>Services</a></li>
-                        {{-- <li><a href={{ url('/gallery') }}>Gallery</a></li> --}}
-                        {{-- <li><a href={{ url('/blog') }}>Blog</a></li> --}}
-                        <li><a href={{ url('/contact') }}>Contact</a></li>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        {{-- <li><a href="{{ url('/about-us') }}">About Us</a></li> --}}
+                        <li><a href="{{ url('/services') }}">Services</a></li>
+                        {{-- <li><a href="{{ url('/gallery') }}">Gallery</a></li> --}}
+                        {{-- <li><a href="{{ url('/blog') }}">Blog</a></li> --}}
+                        <li><a href="{{ url('/contact') }}">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="copyright-text">
-                    <p>Copyright © <a href={{ url('/') }}>Adjust for</a> 2018. All rights reserved</p>
+                    <p>Copyright © <a href="{{ url('/') }}">Adjust for</a> 2018. All rights reserved</p>
                 </div>
             </div>
         </div>

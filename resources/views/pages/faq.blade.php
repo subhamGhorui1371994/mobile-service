@@ -1,5 +1,5 @@
 @extends('layouts.template')
-@section('title','FAQs')
+@section('title', 'FAQs')
 @section('content')
     <!--Page Title-->
     <section class="page-title" style="background-image:url(assets/images/background/6.jpg);">
@@ -7,7 +7,7 @@
             <div class="inner-container clearfix">
                 <h1>Frequently Asked Questions</h1>
                 <ul class="bread-crumb clearfix">
-                    <li><a href={{ url('/') }}>Home</a></li>
+                    <li><a href="{{ url('/') }}">Home</a></li>
                     <li>FAQ's</li>
                 </ul>
             </div>
@@ -628,44 +628,44 @@
             <!--Sponsors Carousel-->
             <ul class="sponsors-carousel owl-carousel owl-theme">
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/1.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/1.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/2.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/2.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/3.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/3.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/4.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/4.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/5.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/5.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/1.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/1.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/2.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/2.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/3.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/3.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/4.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/4.png') }}" alt=""></a></figure>
                 </li>
                 <li class="slide-item">
-                    <figure class="image-box"><a href={{ url('#') }}><img
-                                src={{ url('assets/images/clients/5.png') }} alt=""></a></figure>
+                    <figure class="image-box"><a href="{{ url('#') }}"><img
+                                src="{{ url('assets/images/clients/5.png') }}" alt=""></a></figure>
                 </li>
             </ul>
         </div>
