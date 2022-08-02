@@ -22,19 +22,16 @@ class ContactController extends Controller
 
     public function submitContactForm(Request $request)
     {
+
+        // Please use only validation fields to create validation rules.
         $validate_value['name'] = $request->post('name');
         $validate_rule['name'] = 'required';
 
         $validate_value['phone'] = $request->post('phone');
         $validate_rule['phone'] = 'required';
 
-        $validate_value['email'] = $request->post('email');
-        $validate_rule['email'] = 'required';
-
         $validate_value['subject'] = $request->post('subject');
         $validate_rule['subject'] = 'required';
-
-        $validate_value['message'] = $request->post('message');
 
 
         $validator = Validator::make($validate_value, $validate_rule);

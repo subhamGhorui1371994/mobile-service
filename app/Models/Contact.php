@@ -35,8 +35,6 @@ class Contact extends Model
             $query->where(function ($query) use ($search) {
                 $query->Where('name', 'like', '%' . $search . '%');
                 $query->Where('phone', 'like', '%' . $search . '%');
-                $query->Where('service', 'like', '%' . $search . '%'); // ??????
-
             });
         }
 
