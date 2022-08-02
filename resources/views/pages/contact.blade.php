@@ -79,32 +79,29 @@
                             <div class="row clearfix">
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                     <input type="text" name="name" id="name" placeholder="Name"
-                                        data-msg-required="Name field is required" required>
+                                           data-msg-required="Name field is required" required>
                                     <span class="validation-errors"></span>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                     <input type="text" name="phone" id="phone" placeholder="Phone"
-                                        data-msg-required="Mobile Or Telephone field is required field is required"
-                                        required>
+                                           data-msg-required="Mobile Or Telephone field is required field is required"
+                                           required>
                                     <span class="validation-errors"></span>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                    <input type="email" name="email" id="email" placeholder="Email"
-                                        data-msg-required="Email field is required" required>
-                                    <span class="validation-errors"></span>
+                                    <input type="email" name="email" id="email" placeholder="Email"/>
                                 </div>
 
                                 <div class="col-lg-6 col-md-6 col-sm-12 form-group">
                                     <input type="text" name="subject" id="subject" placeholder="Subject"
-                                        data-msg-required="Subject field is required" required>
+                                           data-msg-required="Subject field is required" required>
                                     <span class="validation-errors"></span>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                     <textarea name="message" id="message" placeholder="Message"></textarea>
-                                    <span class="validation-errors"></span>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -132,71 +129,81 @@
         </div>
     </section> --}}
     <!-- End Map Section -->
-
-@section('clients-section')
-
 @endsection
+@section('clients-section')
+@endsection
+@section('footer_script')
+    <link href="{{ URL::asset('assets/admin/js/jquery-validation/jquery-validate.css') }}" rel="stylesheet"
+          type="text/css">
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#contact_form').validate({
-            ignore: [],
-            errorPlacement: function errorPlacement(error, element) {
-                $(element).parents('div.form-group').find('span.validation-errors').append(error);
-            },
-            onfocusout: false,
-            highlight: function(element, errorClass) {
-                if ($(element).hasClass('select-2')) {
-                    $(element).next('.select2-container').addClass(errorClass);
-                } else {
-                    $(element).addClass(errorClass);
+    <script type="text/javascript"
+            src="{{ URL::asset('assets/admin/js/jquery-validation/jquery.validate.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/jquery-validation/additional-methods.js') }}">
+    </script>
+    <script type="text/javascript" src="{{ URL::asset('assets/js/jquery.blockUI.js') }}"></script>
+
+    <link href="{{ URL::asset('assets/admin/js/select2/dist/css/select2.min.css') }}" rel="stylesheet"/>
+    <script type="text/javascript" src="{{ URL::asset('assets/admin/js/select2/dist/js/select2.min.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#contact_form').validate({
+                ignore: [],
+                errorPlacement: function errorPlacement(error, element) {
+                    $(element).parents('div.form-group').find('span.validation-errors').append(error);
+                },
+                onfocusout: false,
+                highlight: function (element, errorClass) {
+                    if ($(element).hasClass('select-2')) {
+                        $(element).next('.select2-container').addClass(errorClass);
+                    } else {
+                        $(element).addClass(errorClass);
+                    }
+                },
+                unhighlight: function (element, errorClass) {
+                    if ($(element).hasClass('select-2')) {
+                        $(element).next('.select2-container').removeClass(errorClass);
+                    } else {
+                        $(element).removeClass(errorClass);
+                    }
+                },
+                submitHandler: function (form) {
+                    if ($(form).valid()) {
+                        $('.make-contact-area').block({
+                            message: '<h1 style="font-size: 26px;">Processing your request. Please wait...</h1><img src="' +
+                                base_url +
+                                '/assets/img/loader.gif" style="width: 100px;margin-bottom: 20px">',
+                            css: {
+                                border: '3px solid #a00',
+                                'top': '30%!important'
+                            }
+                        });
+                        $.ajax({
+                            url: base_url + '/submit-contact-form',
+                            type: 'POST',
+                            data: {
+                                'name': $('#name').val(),
+                                'phone': $('#phone').val(),
+                                'email': $('#email').val(),
+                                'subject': $('#subject').val(),
+                                'message': $('#message').val(),
+                            },
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                            },
+                            dataType: 'json',
+                        }).done(function (response) {
+                            if (response.status === true) {
+                                $('#contact_form')[0].reset();
+                                showNotification('success', response.msg);
+                            } else {
+                                showNotification('error', response.msg);
+                            }
+                            $('.make-contact-area').unblock();
+                        });
+                    }
                 }
-            },
-            unhighlight: function(element, errorClass) {
-                if ($(element).hasClass('select-2')) {
-                    $(element).next('.select2-container').removeClass(errorClass);
-                } else {
-                    $(element).removeClass(errorClass);
-                }
-            },
-            submitHandler: function(form) {
-                if ($(form).valid()) {
-                    $('.make-contact-area').block({
-                        message: '<h1 style="font-size: 26px;">Processing your request. Please wait...</h1><img src="' +
-                            base_url +
-                            '/assets/img/loader.gif" style="width: 100px;margin-bottom: 20px">',
-                        css: {
-                            border: '3px solid #a00',
-                            'top': '30%!important'
-                        }
-                    });
-                    $.ajax({
-                        url: base_url + '/submit-contact-form',
-                        type: 'POST',
-                        data: {
-                            'name': $('#name').val(),
-                            'phone': $('#phone').val(),
-                            'email': $('#email').val(),
-                            'subject': $('#subject').val(),
-                            'message': $('#message').val(),
-                        },
-                        headers: {
-                            'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
-                        },
-                        dataType: 'json',
-                    }).done(function(response) {
-                        if (response.status === true) {
-                            $('#contact_form')[0].reset();
-                            showNotification('success', response.msg);
-                        } else {
-                            showNotification('error', response.msg);
-                        }
-                        $('.make-contact-area').unblock();
-                    });
-                }
-            }
+            });
+
         });
-
-    });
-</script>
+    </script>
 @endsection
