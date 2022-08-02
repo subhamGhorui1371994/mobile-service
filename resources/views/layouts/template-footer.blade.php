@@ -13,7 +13,7 @@
                                 <div class="footer-logo">
                                     <figure>
                                         <a href="{{ url('/') }}"><img
-                                                src="{{ url('assets/images/my-images/footer-logo.png') }}"
+                                                src="{{ url('assets/images/my-images/footer/footer-logo.png') }}"
                                                 alt="footer-logo.png"></a>
                                     </figure>
                                 </div>
@@ -66,27 +66,27 @@
                         <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                             <!--Footer Column-->
                             <div class="footer-widget recent-posts">
-                                <h2 class="widget-title">Any Updates</h2>
+                                <h2 class="widget-title">Top Services</h2>
                                 <!--Footer Column-->
                                 <div class="widget-content">
                                     <div class="post">
-                                        <div class="thumb"><a href="{{ url('blog-detail.html') }}"><img
-                                                    src="{{ url('assets/images/resource/post-thumb-1.jpg') }}"
-                                                    alt="post-thumb-1.jpg"></a>
+                                        <div class="thumb"><a href="{{ url('#') }}"><img
+                                            src="{{ url('assets/images/my-images/footer/cctv-logo.png') }}"
+                                            alt="cctv-logo.png"></a>
                                         </div>
-                                        <h4><a href="{{ url('blog-detail.html') }}">The Summer Sppecial Day Out</a>
+                                        <h4><a href="{{ url('service-detail') }}">CCTV has been installed here.</a>
                                         </h4>
-                                        <a href="{{ url('blog-detail.html') }}" class="read-more">Read More</a>
+                                        {{-- <a href="{{ url('#') }}" class="read-more">Read More</a> --}}
                                     </div>
 
                                     <div class="post">
-                                        <div class="thumb"><a href="{{ url('blog-detail.html') }}"><img
-                                                    src="{{ url('assets/images/resource/post-thumb-2.jpg') }}"
-                                                    alt="post-thumb-2.jpg"></a>
+                                        <div class="thumb"><a href="{{ url('#') }}"><img
+                                            src="{{ url('assets/images/my-images/footer/laptop-logo.png') }}"
+                                            alt="laptop-logo.png"></a>
                                         </div>
-                                        <h4><a href="{{ url('blog-detail.html') }}">Drop & Drug Your Tagline Here</a>
+                                        <h4><a href="{{ url('service-detail') }}">OS has been installed here.</a>
                                         </h4>
-                                        <a href="{{ url('blog-detail.html') }}" class="read-more">Read More</a>
+                                        {{-- <a href="{{ url('#') }}" class="read-more">Read More</a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -143,7 +143,8 @@
                 </div>
 
                 <div class="copyright-text">
-                    <p>Copyright © <a href="{{ url('/') }}">Adjust for</a> 2018. All rights reserved</p>
+                    {{-- <p>Copyright © <a href="{{ url('/') }}">Adjust for</a> 2018. All rights reserved</p> --}}
+                    <p>Copyright &copy; Adjust for 2018-@php echo date("Y");@endphp. All rights reserved</p>
                 </div>
             </div>
         </div>

@@ -67,7 +67,7 @@
                 </div>
 
                 <!-- Form Column -->
-                <div class="form-column col-lg-8 col-md-12 col-sm-12">
+                <div class="form-column col-lg-8 col-md-12 col-sm-12 make-contact-area">
                     <div class="contact-form-two">
                         <div class="sec-title">
                             <h2>Get in Touch</h2>
@@ -104,6 +104,7 @@
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                     <textarea name="message" id="message" placeholder="Message"></textarea>
+                                    <span class="validation-errors"></span>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -138,7 +139,7 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#appointment_form').validate({
+        $('#contact_form').validate({
             ignore: [],
             errorPlacement: function errorPlacement(error, element) {
                 $(element).parents('div.form-group').find('span.validation-errors').append(error);
@@ -160,7 +161,7 @@
             },
             submitHandler: function(form) {
                 if ($(form).valid()) {
-                    $('.make-appointment-area').block({
+                    $('.make-contact-area').block({
                         message: '<h1 style="font-size: 26px;">Processing your request. Please wait...</h1><img src="' +
                             base_url +
                             '/assets/img/loader.gif" style="width: 100px;margin-bottom: 20px">',
@@ -170,17 +171,14 @@
                         }
                     });
                     $.ajax({
-                        url: base_url + '/submit-appointment',
+                        url: base_url + '/submit-contact-form',
                         type: 'POST',
                         data: {
-                            'full_name': $('#full_name').val(),
-                            'contact_number': $('#contact_number').val(),
+                            'name': $('#name').val(),
+                            'phone': $('#phone').val(),
                             'email': $('#email').val(),
-                            'service': $('#service').val(),
-                            'date': $('#date').val(),
-                            'time_slot': $('#time_slot').val(),
-                            'location': $('#location').val(),
-                            'problem': $('#problem').val(),
+                            'subject': $('#subject').val(),
+                            'message': $('#message').val(),
                         },
                         headers: {
                             'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
@@ -188,12 +186,12 @@
                         dataType: 'json',
                     }).done(function(response) {
                         if (response.status === true) {
-                            $('#appointment_form')[0].reset();
+                            $('#contact_form')[0].reset();
                             showNotification('success', response.msg);
                         } else {
                             showNotification('error', response.msg);
                         }
-                        $('.make-appointment-area').unblock();
+                        $('.make-contact-area').unblock();
                     });
                 }
             }
