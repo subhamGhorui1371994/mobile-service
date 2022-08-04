@@ -144,7 +144,7 @@
 
                 <div class="copyright-text">
                     {{-- <p>Copyright © <a href="{{ url('/') }}">Adjust for</a> 2018. All rights reserved</p> --}}
-                    <p>Copyright &copy; Adjust for 2018-@php echo date("Y");@endphp. All rights reserved</p>
+                    <p>Copyright &copy; Adjust for 2018-{{date('Y')}}. All rights reserved</p>
                 </div>
             </div>
         </div>
