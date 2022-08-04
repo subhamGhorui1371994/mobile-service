@@ -1,5 +1,5 @@
 <!-- Main Footer -->
-<footer class="main-footer" style="background-image: url(assets/images/background/3.jpg);">
+<footer class="main-footer" style="background-image: url(assets/images/background.jpg);">
     <div class="auto-container">
         <!--Widgets Section-->
         <div class="widgets-section">
@@ -19,10 +19,7 @@
                                 </div>
 
                                 <div class="widget-content">
-                                    <div class="text">Repairplus brings 25 years of Digital Repairs experience right
-                                        to your Device. Our Texhnicians are equipped to help you that work best.Our
-                                        commitment to bring professionalism, good service & trust to the Phone repair
-                                        service & maintenance business.</div>
+                                    <div class="text">Please contact us if you need our services. </div>
                                     {{-- <ul class="social-icon-two">
                                         <li>Follow Us:</li>
                                         <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>

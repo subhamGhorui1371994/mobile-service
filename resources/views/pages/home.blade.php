@@ -186,7 +186,7 @@
     <!--End Services Section -->
 
     <!-- Fun Fact Section -->
-    <section class="fun-fact-section" style="background-image: url(assets/images/background/4.jpg);">
+    <section class="fun-fact-section" style="background-image: url(assets/images/background.jpg);">
         <div class="auto-container">
             <div class="fact-counter">
                 <div class="row clearfix">
@@ -194,8 +194,8 @@
                     <div class="counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="count-box">
                             {{-- <span class="count-text" data-speed="3000" data-stop="2456">0</span> --}}
-                            <span class="count-text">{{ env('MOBILES_REPAIRED', '2456') }}</span>
-                            <h4 class="counter-title">Mobiles Repaired</h4>
+                            <span class="count-text">{{ env('SERVICES_RESOLVED', '530') }}</span>
+                            <h4 class="counter-title">Services Resolved</h4>
                         </div>
                     </div>
 
@@ -203,7 +203,7 @@
                     <div class="counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="count-box">
                             {{-- <span class="count-text" data-speed="3000" data-stop="1465">0</span> --}}
-                            <span class="count-text">{{ env('EXPERT_TECHNICIANS', '1465') }}</span>
+                            <span class="count-text">{{ env('EXPERT_TECHNICIANS', '5') }}</span>
                             <h4 class="counter-title">Expert Technicians</h4>
                         </div>
                     </div>
@@ -212,7 +212,7 @@
                     <div class="counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="count-box">
                             {{-- <span class="count-text" data-speed="3000" data-stop="8781">0</span> --}}
-                            <span class="count-text">{{ env('COMPLETED_DEALS', '8781') }}</span>
+                            <span class="count-text">{{ env('COMPLETED_DEALS', '134') }}</span>
                             <h4 class="counter-title">Completed Deals</h4>
                         </div>
                     </div>
@@ -221,7 +221,7 @@
                     <div class="counter-column col-lg-3 col-md-6 col-sm-12">
                         <div class="count-box">
                             {{-- <span class="count-text" data-speed="3000" data-stop="8536">0</span> --}}
-                            <span class="count-text">{{ env('HAPPY_CUSTOMERS', '8536') }}</span>
+                            <span class="count-text">{{ env('HAPPY_CUSTOMERS', '420') }}</span>
                             <h4 class="counter-title">Happy Customers</h4>
                         </div>
                     </div>
@@ -370,7 +370,7 @@
 <!--End Projects Section -->
 
     <!-- Call Back Section -->
-    <section class="call-back-section" style="background-image: url(assets/images/background/5.jpg);">
+    <section class="call-back-section" style="background-image: url(assets/images/background.jpg);">
         <div class="outer-box">
             <div class="auto-container">
                 <div class="row clearfix">
