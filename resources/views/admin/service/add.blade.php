@@ -35,19 +35,19 @@
 
             <div class="form-group">
                 <label class="control-label text-bold" for="display_image">Display Image</label>
-                <input type="file" name="display_image" id="display_image" class="form-control" accept="image/x-png,image/gif,image/jpeg,image/jpg" data-msg-required="Please select a display image file.">
+                <input type="file" name="display_image" id="display_image" class="form-control" accept="image/x-png,image/gif,image/jpeg,image/jpg,image/png" data-msg-required="Please select a display image file.">
                 <span class="validation-errors"></span>
             </div>
 
             <div class="form-group">
                 <label class="control-label text-bold" for="banner_image">Service Banner Image</label>
-                <input type="file" name="banner_image" id="banner_image" class="form-control" accept="image/x-png,image/gif,image/jpeg,image/jpg" data-msg-required="Please select a banner image file.">
+                <input type="file" name="banner_image" id="banner_image" class="form-control" accept="image/x-png,image/gif,image/jpeg,image/jpg,image/png" data-msg-required="Please select a banner image file.">
                 <span class="validation-errors"></span>
             </div>
 
             <div class="form-group">
                 <label class="control-label text-bold" for="footer_image">Footer Image</label>
-                <input type="file" name="footer_image" id="footer_image" class="form-control" accept="image/x-png,image/gif,image/jpeg,image/jpg" data-msg-required="Please select a footer image file.">
+                <input type="file" name="footer_image" id="footer_image" class="form-control" accept="image/x-png,image/gif,image/jpeg,image/jpg,image/png" data-msg-required="Please select a footer image file.">
                 <span class="validation-errors"></span>
             </div>
 
