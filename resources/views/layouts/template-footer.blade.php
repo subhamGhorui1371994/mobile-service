@@ -19,7 +19,11 @@
                                 </div>
 
                                 <div class="widget-content">
-                                    <div class="text">Please contact us if you need our services. </div>
+                                    {{-- <div class="text">Please contact us if you need our services. </div> --}}
+                                    <div class="text">
+                                        One call your tension will gone. <br>
+                                        We provide a best service in the precise way.
+                                    </div>
                                     {{-- <ul class="social-icon-two">
                                         <li>Follow Us:</li>
                                         <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
@@ -47,7 +51,8 @@
 
                                         @if ($services)
                                             @foreach ($services as $id => $service)
-                                                <li><a href="{{ url('service-detail/' . $id) }}">{{ $service }}</a></li>
+                                                <li><a href="{{ url('service-detail/' . $id) }}">{{ $service }}</a>
+                                                </li>
                                             @endforeach
                                         @endif
                                     </ul>
@@ -68,8 +73,8 @@
                                 <div class="widget-content">
                                     <div class="post">
                                         <div class="thumb"><a href="{{ url('#') }}"><img
-                                            src="{{ url('assets/images/my-images/footer/cctv-logo.png') }}"
-                                            alt="cctv-logo.png"></a>
+                                                    src="{{ url('assets/images/my-images/footer/cctv-logo.png') }}"
+                                                    alt="cctv-logo.png"></a>
                                         </div>
                                         <h4><a href="{{ url('service-detail') }}">CCTV has been installed here.</a>
                                         </h4>
@@ -78,8 +83,8 @@
 
                                     <div class="post">
                                         <div class="thumb"><a href="{{ url('#') }}"><img
-                                            src="{{ url('assets/images/my-images/footer/laptop-logo.png') }}"
-                                            alt="laptop-logo.png"></a>
+                                                    src="{{ url('assets/images/my-images/footer/laptop-logo.png') }}"
+                                                    alt="laptop-logo.png"></a>
                                         </div>
                                         <h4><a href="{{ url('service-detail') }}">OS has been installed here.</a>
                                         </h4>
@@ -141,7 +146,7 @@
 
                 <div class="copyright-text">
                     {{-- <p>Copyright © <a href="{{ url('/') }}">Adjust for</a> 2018. All rights reserved</p> --}}
-                    <p>Copyright &copy; Adjust for 2018-{{date('Y')}}. All rights reserved</p>
+                    <p>Copyright &copy; Adjust for 2018-{{ date('Y') }}. All rights reserved</p>
                 </div>
             </div>
         </div>
