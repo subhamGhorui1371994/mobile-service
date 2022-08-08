@@ -61,10 +61,24 @@ class AppointmentAdminController extends Controller
             if (isset($request->order[0]['column'])) {
                 if ($request->order[0]['column'] == 0) {
                     $order_column = 'full_name';
-                }  elseif ($request->order[0]['column'] == 2) {
+                }
+                elseif ($request->order[0]['column'] == 1) {
                     $order_column = 'contact_number';
-                }  elseif ($request->order[0]['column'] == 3) {
+                }
+                elseif ($request->order[0]['column'] == 2) {
                     $order_column = 'service';
+                }
+                elseif ($request->order[0]['column'] == 3) {
+                    $order_column = 'date';
+                }
+                elseif ($request->order[0]['column'] == 4) {
+                    $order_column = 'time_slot';
+                }
+                elseif ($request->order[0]['column'] == 5) {
+                    $order_column = 'location';
+                }
+                elseif ($request->order[0]['column'] == 6) {
+                    $order_column = 'created_at';
                 }
             }
         }
@@ -84,5 +98,4 @@ class AppointmentAdminController extends Controller
             "data" => $details['data'],
         ]);
     }
-
 }

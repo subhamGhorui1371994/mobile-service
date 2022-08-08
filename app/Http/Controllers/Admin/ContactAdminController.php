@@ -62,8 +62,15 @@ class ContactAdminController extends Controller
             if (isset($request->order[0]['column'])) {
                 if ($request->order[0]['column'] == 0) {
                     $order_column = 'name';
-                }  elseif ($request->order[0]['column'] == 2) {
+                }
+                elseif ($request->order[0]['column'] == 1) {
                     $order_column = 'phone';
+                }
+                elseif ($request->order[0]['column'] == 2) {
+                    $order_column = 'subject';
+                }
+                elseif ($request->order[0]['column'] == 3) {
+                    $order_column = 'created_at';
                 }
             }
         }

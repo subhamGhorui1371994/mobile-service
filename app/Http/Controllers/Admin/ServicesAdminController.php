@@ -61,7 +61,7 @@ class ServicesAdminController extends Controller
             if (isset($request->order[0]['column'])) {
                 if ($request->order[0]['column'] == 0) {
                     $order_column = 'title';
-                }  elseif ($request->order[0]['column'] == 3) {
+                }  elseif ($request->order[0]['column'] == 1) {
                     $order_column = 'created_at';
                 }
             }
