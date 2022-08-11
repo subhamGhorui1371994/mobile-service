@@ -19,7 +19,7 @@
                                 </div>
 
                                 <div class="widget-content">
-                                    <div class="text">Please contact us if you need our services. </div>
+                                    <div class="text">One call your tension will gone. </div>
                                     {{-- <ul class="social-icon-two">
                                         <li>Follow Us:</li>
                                         <li><a href="{{ url('#') }}"><i class="la la-facebook"></i></a></li>
