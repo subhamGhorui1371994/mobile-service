@@ -20,7 +20,7 @@
                         </div> --}}
                         <div class="card-body">
                             {{-- {!! html_entity_decode($employeeDtlData->BRANCH_NAME) !!} --}}
-                            <h5 class="card-title"><b>ID:</b> {{!empty($serviceData->id) ? $servicelData->id: ''}}</h5>
+                            <h5 class="card-title"><b>ID:</b> {{!empty($serviceData->id) ? $servicelData->id:''}}</h5>
                             {{-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> --}}
                         </div>
                         {{-- <div class="card-body">
