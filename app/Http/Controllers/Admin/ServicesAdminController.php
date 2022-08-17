@@ -161,6 +161,13 @@ class ServicesAdminController extends Controller
 
             return redirect('admin/service')->withSuccess('Service added successfully.');
         }
+
+
+
     }
 
+    public function show ($id, Request $request){
+        $serviceData = service::where('id', $id)->first();
+             return view('admin.service.service-list', compact('serviceData'));
+    }
 }

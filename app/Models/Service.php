@@ -37,6 +37,7 @@ class Service extends Model
         if (!empty($search)) {
             $query->where(function ($query) use ($search) {
                 $query->Where('title', 'like', '%' . $search . '%');
+                
             });
         }
 
