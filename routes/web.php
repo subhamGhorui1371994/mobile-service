@@ -54,11 +54,11 @@ Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => ['adminAfterLogin']], function () {
         Route::get('dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
 
-        Route::model('service', 'App\Models\Service');
+        Route::model('Service', 'App\Models\Service');
         Route::resource('service', 'App\Http\Controllers\Admin\ServicesAdminController');
         Route::post('service/get-list', [ServicesAdminController::class, 'service_list_ajax']);
         Route::get('service/delete/{id}', [ServicesAdminController::class, 'destroy']);
-        // Route::get('scrvice/service-list/{id}', [ServicesAdminController::class, 'serviceData']);
+
 
         Route::model('Appointment', 'App\Models\Appointment');
         Route::resource('appointment', 'App\Http\Controllers\Admin\AppointmentAdminController');
