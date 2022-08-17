@@ -58,6 +58,7 @@ Route::group(['prefix' => 'admin'], function () {
         Route::resource('service', 'App\Http\Controllers\Admin\ServicesAdminController');
         Route::post('service/get-list', [ServicesAdminController::class, 'service_list_ajax']);
         Route::get('service/delete/{id}', [ServicesAdminController::class, 'destroy']);
+        // Route::get('scrvice/service-list/{id}', [ServicesAdminController::class, 'serviceData']);
 
         Route::model('Appointment', 'App\Models\Appointment');
         Route::resource('appointment', 'App\Http\Controllers\Admin\AppointmentAdminController');
