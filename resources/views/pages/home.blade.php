@@ -26,7 +26,8 @@
                             data-hoffset="['0','0','15','15']" data-voffset="['-115','-115','-95','-145']"
                             data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']"
                             data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h2 style="color: whitesmoke">We provide the best <br> Service in the precise <br> Way.</h2>
+                            <h2 style="color: whitesmoke">One call your <br>tension will gone.</h2>
+                            {{-- We provide the best <br> Service in the precise <br> Way. --}}
                         </div>
 
                         {{-- <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" --}}
@@ -74,7 +75,7 @@
                             data-hoffset="['0','0','15','15']" data-voffset="['-115','-115','-95','-145']"
                             data-x="['right','right','left','left']" data-y="['middle','middle','middle','middle']"
                             data-frames='[{"delay":0,"split":"chars","splitdelay":0.05,"speed":2000,"frame":"0","from":"x:[105%];z:0;rX:45deg;rY:0deg;rZ:90deg;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h2 style="color: whitesmoke">We provide the best <br> Service in the precise <br> Way.</h2>
+                            <h2 style="color: whitesmoke">One call your<br> tension will gone.</h2>
                         </div>
 
                         {{-- <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" --}}
